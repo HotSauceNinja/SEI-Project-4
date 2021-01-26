@@ -1,8 +1,7 @@
 # SEI-Project-4
 # FASTival
 by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/)
-**Version** 
-[Shields.io: Quality metadata badges for open source projects](https://shields.io/category/version)
+
 **Website** address
 
 ## Small description
