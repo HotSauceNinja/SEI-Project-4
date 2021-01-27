@@ -1,0 +1,70 @@
+[
+{
+  "model": "films.film",
+  "pk": 1,
+  "fields": {
+    "title": "Hunt for the Wilderpeople",
+    "director": "Taika Waititi",
+    "year_released": 2016,
+    "country": "New Zealand",
+    "run_time": "01:41:00",
+    "plot": "Bella and Hector, two reclusive country folk, become foster parents to Ricky, a problem child from the city. After some adjustment, things go reasonably well. However, the death of Bella means Hector now has to look after Ricky, and they didn't get along too well. Moreover, her death causes Child Services to decide to send Ricky back to the orphanage. Ricky refuses to go back and runs away, ultimately sparking a national manhunt for him and Hector.",
+    "genre": "Comedy",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjI1MDQ2MDg5Ml5BMl5BanBnXkFtZTgwMjc2NjM5ODE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Piki Films",
+    "film_format": "DCP",
+    "submission_date": "2021-01-27T12:47:47.212Z"
+  }
+},
+{
+  "model": "films.film",
+  "pk": 2,
+  "fields": {
+    "title": "Tremors",
+    "director": "Ron Underwood",
+    "year_released": 1990,
+    "country": "USA",
+    "run_time": "01:36:00",
+    "plot": "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
+    "genre": "Horror",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTEzNjkwMzIyMjZeQTJeQWpwZ15BbWU4MDI2NTU5ODYx._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Universal Pictures",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T12:50:43.356Z"
+  }
+},
+{
+  "model": "films.film",
+  "pk": 3,
+  "fields": {
+    "title": "Soul",
+    "director": "Pete Docter, Kemp Powers",
+    "year_released": 2020,
+    "country": "USA",
+    "run_time": "01:40:00",
+    "plot": "After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.",
+    "genre": "Family",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Disney",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T12:53:20.956Z"
+  }
+},
+{
+  "model": "films.film",
+  "pk": 4,
+  "fields": {
+    "title": "The Thin Blue Line",
+    "director": "Errol Morris",
+    "year_released": 1988,
+    "country": "USA",
+    "run_time": "01:41:00",
+    "plot": "A film that successfully argued that a man was wrongly convicted for murder by a corrupt justice system in Dallas County, Texas.",
+    "genre": "documentary",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTE3MTViMDUtNjkxYy00NWY2LTg5MzEtYjFiNzRkMTgwYTJmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Miramax Films",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T13:56:08.866Z"
+  }
+}
+]

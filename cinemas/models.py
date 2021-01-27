@@ -9,7 +9,6 @@ class Cinema(models.Model):
     phone_number = models.CharField(max_length=14)
     contact_name = models.CharField(max_length=50)
     image = models.CharField(max_length=500)
-    # ! Integrate maps API
 
     def __str__(self):
         return f"{self.name}"

@@ -1,0 +1,26 @@
+[
+{
+  "model": "scheduling_slots.slot",
+  "pk": 1,
+  "fields": {
+    "start_time": "2021-06-16T17:00:00Z",
+    "end_time": "2021-06-16T21:00:00Z"
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 2,
+  "fields": {
+    "start_time": "2021-06-16T19:00:00Z",
+    "end_time": "2021-06-16T21:00:00Z"
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 3,
+  "fields": {
+    "start_time": "2021-06-16T20:00:00Z",
+    "end_time": "2021-06-16T22:00:00Z"
+  }
+}
+]

@@ -23,4 +23,5 @@ urlpatterns = [
     path('api/sections/', include('sections.urls')),
     path('api/films/', include('films.urls')),
     path('api/slots/', include('scheduling_slots.urls')),
+    path('api/genres/', include('genres.urls')),
 ]

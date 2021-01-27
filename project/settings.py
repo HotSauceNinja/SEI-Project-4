@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'sections',
     'films',
     'scheduling_slots',
+    'genres',
 ]
 
 MIDDLEWARE = [
