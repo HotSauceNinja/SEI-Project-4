@@ -21,4 +21,5 @@ urlpatterns = [
     path('api/auth/', include('jwt_auth.urls')),
     path('api/cinemas/', include('cinemas.urls')),
     path('api/sections/', include('sections.urls')),
+    path('api/films/', include('films.urls')),
 ]
