@@ -92,5 +92,301 @@
       6
     ]
   }
+},
+{
+  "model": "films.film",
+  "pk": 5,
+  "fields": {
+    "title": "The Negotiator | Beirut",
+    "director": "Brad Anderson",
+    "year_released": 2018,
+    "country": "USA",
+    "run_time": "01:50:00",
+    "plot": "Mason Skiles had a great life as a diplomat in Beirut. He and his wife, Nadia, live in a beautiful house and have been mentoring a thirteen year-old Palestinian boy named Karim. The opening scene is a party that the Stiles are hosting for other dignitaries. Karim is helping out serving the guests. When a CIA friend of Mason, Cal, comes to the party he is interested only in taking Karim in for questioning about an older brother Mason doesn't know about. What happens that night changes Mason's life forever, along several others at the party...",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZWU5MjMxYmMtYzY2NS00MDU1LWIwMzAtMzIwYjY5NDIxZjZkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Kasbah Films",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T21:51:04.136Z",
+    "genre": [
+      1,
+      4
+    ],
+    "section": [
+      1
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 6,
+  "fields": {
+    "title": "A Clockwork Orange",
+    "director": "Stanley Kubrick",
+    "year_released": 1971,
+    "country": "UK |  USA",
+    "run_time": "02:16:00",
+    "plot": "Protagonist Alex DeLarge is an \"ultraviolent\" youth in futuristic Britain. As with all luck, his eventually runs out and he's arrested and convicted of murder. While in prison, Alex learns of an experimental program in which convicts are programmed to detest violence. If he goes through the program, his sentence will be reduced and he will be back on the streets sooner than expected. But Alex's ordeals are far from over once he hits the streets of Britain..",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Warner Bros.",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T21:54:27.468Z",
+    "genre": [
+      1
+    ],
+    "section": [
+      5
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 7,
+  "fields": {
+    "title": "Shaun of the Dead",
+    "director": "Edgar Wright",
+    "year_released": 2004,
+    "country": "UK | France | USA",
+    "run_time": "01:39:00",
+    "plot": "Shaun (Simon Pegg) doesn't have a very good day, so he decides to turn his life around by getting his ex to take him back, but he times it for right in the middle of what may be a zombie apocalypse.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTg5Mjk2NDMtZTk0Ny00YTQ0LWIzYWEtMWI5MGQ0Mjg1OTNkXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Universal Pictures",
+    "film_format": "DCP",
+    "submission_date": "2021-01-27T21:58:13.533Z",
+    "genre": [
+      2,
+      6
+    ],
+    "section": [
+      6
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 8,
+  "fields": {
+    "title": "The 39 Steps",
+    "director": "Alfred Hitchcock",
+    "year_released": 1935,
+    "country": "UK",
+    "run_time": "01:26:00",
+    "plot": "A man in London tries to help a counter-espionage Agent. But when the Agent is killed, and the man stands accused, he must go on the run to save himself and stop a spy ring which is trying to steal top secret information.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTY5ODAzMTcwOF5BMl5BanBnXkFtZTcwMzYxNDYyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Gaumont",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T22:01:01.519Z",
+    "genre": [
+      1
+    ],
+    "section": [
+      5
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 9,
+  "fields": {
+    "title": "The AristoCats",
+    "director": "Wolfgang Reitherman",
+    "year_released": 1970,
+    "country": "USA",
+    "run_time": "01:18:00",
+    "plot": "With the help of a smooth talking tomcat, a family of Parisian felines set to inherit a fortune from their owner try to make it back home after a jealous butler kidnaps them and leaves them in the country.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU1MzM0MjcxMF5BMl5BanBnXkFtZTgwODQ0MzcxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Disney",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T22:03:27.150Z",
+    "genre": [
+      5,
+      7,
+      9,
+      11
+    ],
+    "section": [
+      4
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 10,
+  "fields": {
+    "title": "Clerks",
+    "director": "Kevin Smith",
+    "year_released": 1994,
+    "country": "USA",
+    "run_time": "01:32:00",
+    "plot": "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Miramax",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T22:06:04.918Z",
+    "genre": [
+      2
+    ],
+    "section": [
+      2
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 11,
+  "fields": {
+    "title": "Tuesday, After Christmas",
+    "director": "Radu Muntean",
+    "year_released": 2010,
+    "country": "Romania",
+    "run_time": "01:39:00",
+    "plot": "Paul Hanganu loves two women. Adriana his wife and the mother of their daughter, the woman with whom he's shared the thrills of the past ten years, and Raluca the woman who has made him redefine himself. He has to leave one of them before Christmas.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTUwNDI2MTY0N15BMl5BanBnXkFtZTcwNDU3NDY5NQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Lorber Films",
+    "film_format": "DCP",
+    "submission_date": "2021-01-27T22:08:41.941Z",
+    "genre": [
+      4
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 12,
+  "fields": {
+    "title": "The Paper Will Be Blue",
+    "director": "Radu Muntean",
+    "year_released": 2006,
+    "country": "Romania",
+    "run_time": "01:30:00",
+    "plot": "Out of enthusiasm, a Militia soldier abandons his platoon and decides to fight for the cause of the Revolution. His Lieutenant and the rest of the crew look for him during the confused night of 22-23 December 1989.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOTE4Mzk3OTk3MF5BMl5BanBnXkFtZTcwMjQxNTUzMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg",
+    "distributor": "Transilvania Film",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T22:13:25.793Z",
+    "genre": [
+      2,
+      8
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 13,
+  "fields": {
+    "title": "Marilena de la P7",
+    "director": "Cristian Nemescu",
+    "year_released": 2006,
+    "country": "Romania",
+    "run_time": "00:48:00",
+    "plot": "Andrei, a 13-year-old teenager living on Bucharest outskirts, decides one day to steal a trolleybus in order to impress Marilena, a prostitute he fell in love with.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZmI2OTg2Y2UtODM4Mi00OWIxLWE3OTMtNmI2MDE4Y2VjZTE5XkEyXkFqcGdeQXVyMTM3OTE2Mzg@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "n/a",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T22:16:38.578Z",
+    "genre": [
+      2,
+      4
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 14,
+  "fields": {
+    "title": "California Dreamin'",
+    "director": "Cristian Nemescu",
+    "year_released": 2007,
+    "country": "Romania",
+    "run_time": "02:35:00",
+    "plot": "In 1999, during the Kosovo War,a train carrying NATO equipment, escorted by American Marines with Captain Doug Jones in command, is held back in Capalnita, a Romanian godforsaken village, by Doiaru, the station master, who blocks the train over a paperwork technicality. For five days the villagers try to take advantage of the Americans' unexpected presence.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjExMjk5ODAzMF5BMl5BanBnXkFtZTcwNjg2MjU1MQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Media Pro Pictures",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T22:18:41.214Z",
+    "genre": [
+      2
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 15,
+  "fields": {
+    "title": "The Happiest Girl in the World",
+    "director": "Radu Jude",
+    "year_released": 2009,
+    "country": "Romania",
+    "run_time": "01:39:00",
+    "plot": "Delia, a young Romanian girl, comes to Bucharest with her parents to collect a prize she has won in a contest organized by a soft-drinks company. The prize is a beautiful new car. All Delia has to do now is appear in front of the camera in a commercial. All goes well until it becomes clear that Delia and her parents have very different ideas about what to do with the new car.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BZDc1YWE5ZGYtMDNjMi00OWZiLTk2MWMtOGI1MGRmOWEwOWUzXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Romania Film",
+    "film_format": "NON-DCP DIGITAL",
+    "submission_date": "2021-01-27T22:22:39.582Z",
+    "genre": [
+      2,
+      4
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 16,
+  "fields": {
+    "title": "Weddings, Music and Videotapes",
+    "director": "Tudor Giurgiu",
+    "year_released": 2008,
+    "country": "Romania",
+    "run_time": "00:52:00",
+    "plot": "A \"behind-the-scenes\" insight of the Romanian wedding industry, with cameramen, photographers and singers from all around the country in the spotlight. Their life stories, their editing styles, their hands-on-approach know-how and, of course, their performances at weddings, mix up in a shortcut-style film.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNjQwNmE2MWYtMjE1NC00MDdhLWI5ZmItOWY3OTIyYWIyMWJkXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Transilvania Film",
+    "film_format": "DCP",
+    "submission_date": "2021-01-27T22:25:00.391Z",
+    "genre": [
+      2,
+      3
+    ],
+    "section": [
+      3
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 17,
+  "fields": {
+    "title": "Modern Times",
+    "director": "Charlie Chaplin",
+    "year_released": 1936,
+    "country": "USA",
+    "run_time": "01:27:00",
+    "plot": "Chaplin's last 'silent' film, filled with sound effects, was made when everyone else was making talkies. Charlie turns against modern society, the machine age, and progress. The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYjJiZjMzYzktNjU0NS00OTkxLWEwYzItYzdhYWJjN2QzMTRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Charlie Chaplin Productions",
+    "film_format": "70 mm",
+    "submission_date": "2021-01-27T22:28:39.797Z",
+    "genre": [
+      2,
+      5
+    ],
+    "section": [
+      4
+    ]
+  }
 }
 ]
