@@ -1,0 +1,80 @@
+[
+{
+  "model": "cinemas.cinema",
+  "pk": 1,
+  "fields": {
+    "name": "Filmhouse",
+    "address": "88 Lothian Road, Edinburgh EH3 9BZ Scotland, UK",
+    "latitude": "55.945419",
+    "longitude": "-3.205360",
+    "phone_number": "0131 228 2688",
+    "contact_name": "Ally McC",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Q8x2VFaHGINAmWq_lQnutwHaFb%26pid%3DApi&f=1"
+  }
+},
+{
+  "model": "cinemas.cinema",
+  "pk": 2,
+  "fields": {
+    "name": "Odeon Lothian Road",
+    "address": "118 Lothian Road, Edinburgh EH3 8BG",
+    "latitude": "55.946331",
+    "longitude": "-3.206710",
+    "phone_number": "0131 000 0000",
+    "contact_name": "John Smith",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.9a3j6G_qqhQD51gXXQ7aaQHaFj%26pid%3DApi&f=1"
+  }
+},
+{
+  "model": "cinemas.cinema",
+  "pk": 3,
+  "fields": {
+    "name": "Cineworld Fountain Park",
+    "address": "130 Dundee Street, Edinburgh, EH11 1AF, Scotland",
+    "latitude": "55.940601",
+    "longitude": "-3.217380",
+    "phone_number": "0131 228 8788",
+    "contact_name": "Sally Rae",
+    "image": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fphotos.cinematreasures.org%2Fproduction%2Fphotos%2F150531%2F1451214756%2Flarge.jpg%3F1451214756&f=1&nofb=1"
+  }
+},
+{
+  "model": "cinemas.cinema",
+  "pk": 4,
+  "fields": {
+    "name": "VUE Omni",
+    "address": "Omni Centre, 61/11 Leith Street, EH1 3AU Edinburgh",
+    "latitude": "55.954632",
+    "longitude": "-3.187100",
+    "phone_number": "0871 224 0240",
+    "contact_name": "Matt Milan",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia-cdn.tripadvisor.com%2Fmedia%2Fphoto-s%2F07%2Fcc%2Ff6%2F02%2Fvue-edinburgh-omni-centre.jpg&f=1&nofb=1"
+  }
+},
+{
+  "model": "cinemas.cinema",
+  "pk": 5,
+  "fields": {
+    "name": "Cameo",
+    "address": "38 Home Street, Edinburgh, EH3 9LZ Scotland",
+    "latitude": "55.944900",
+    "longitude": "-3.197430",
+    "phone_number": "0131 228 4141",
+    "contact_name": "Anna Morrison",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.3luc4t-hBKKGqS65Nh3AiwHaEu%26pid%3DApi&f=1"
+  }
+},
+{
+  "model": "cinemas.cinema",
+  "pk": 6,
+  "fields": {
+    "name": "Dominion",
+    "address": "18 Newbattle Terrace, Edinburgh EH10 4RT",
+    "latitude": "55.930740",
+    "longitude": "-3.208290",
+    "phone_number": "0131 447 4771",
+    "contact_name": "Mackenzie Lopez",
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.EHYhyOwmlJDhhZ-Qe1_MYAHaFj%26pid%3DApi&f=1"
+  }
+}
+]

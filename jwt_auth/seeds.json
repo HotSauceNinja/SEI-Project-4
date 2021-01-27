@@ -1,0 +1,154 @@
+[
+{
+  "model": "jwt_auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$cGvhOT8HtQ2i$kCMECfFCxnL6sAMcgjT7ijT1rfYVUAQFOxt+ULjANJI=",
+    "last_login": "2021-01-26T18:53:38.279Z",
+    "is_superuser": true,
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2021-01-26T18:53:29.212Z",
+    "email": "admin@email.com",
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "profile_photo": "",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 3,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$X6DrSwUjqFgg$9YZX60WyCFaY8SAE7JCYYs/9EW4N7zPmdt18HpHXzh4=",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-26T20:41:02.032Z",
+    "email": "ally@email.com",
+    "username": "Ally",
+    "first_name": "Ally",
+    "last_name": "McC",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.qIJMM6jXgJEoT-ZORUP1CQHaK-%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 4,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$a2fVaI5QfqPB$j28YVA7VrTRbzO+NBWw8KkfnqJQQeRdQ1lGsq+cwwJM=",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-26T21:05:24.319Z",
+    "email": "sandra@email.com",
+    "username": "Sandra",
+    "first_name": "Sandra",
+    "last_name": "S",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.T2nIy2_2R83PWVNqhH0pSgHaHa%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 5,
+  "fields": {
+    "password": "pbkdf2_sha256$216000$RzySpdg5eP7d$JQEopkvo3IZCy2erw91/slgsIPmBtPAdvYvoUtGpvdw=",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-26T21:17:09.251Z",
+    "email": "dolan@email.com",
+    "username": "Dolan",
+    "first_name": "Andrew",
+    "last_name": "Dolan",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.pwN1U2eaJ4cJH35sqsadtwHaJL%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 6,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-27T08:46:51Z",
+    "email": "charlie@email.com",
+    "username": "Charlie",
+    "first_name": "Charlie",
+    "last_name": "B",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.fMnPe6k-jRRTJoLnwS8iQgAAAA%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 7,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-27T08:52:19Z",
+    "email": "freddy@email.com",
+    "username": "FreddyK",
+    "first_name": "Freddy",
+    "last_name": "Krueger",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse2.mm.bing.net%2Fth%3Fid%3DOIP.g7c1vhgvAsiBLl2aCMbH0QHaE7%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 8,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-27T08:54:20Z",
+    "email": "donkey@email.com",
+    "username": "Donkey",
+    "first_name": "Donkey",
+    "last_name": "D",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fen%2F6%2F6c%2FDonkey_(Shrek).png&f=1&nofb=1",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "jwt_auth.user",
+  "pk": 9,
+  "fields": {
+    "password": "pass",
+    "last_login": null,
+    "is_superuser": false,
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2021-01-27T08:58:45Z",
+    "email": "dude@email.com",
+    "username": "The_Dude",
+    "first_name": "Jeff",
+    "last_name": "Lebowski",
+    "profile_photo": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse3.mm.bing.net%2Fth%3Fid%3DOIP.KPwLPLjS6Lm2kkPX5AShsQHaEK%26pid%3DApi&f=1",
+    "groups": [],
+    "user_permissions": []
+  }
+}
+]
