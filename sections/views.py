@@ -4,14 +4,14 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 
 from .models import Section
-from .serializers.common import SectionSerializer
+from .serializers.populated import PopulatedSectionSerializer
 
 class SectionListView(APIView):
     """ View for get request to /sections """
 
     def get(self, _request):
         sections = Section.objects.all()
-        serialized_section = SectionSerializer(sections, many=True)
+        serialized_section = PopulatedSectionSerializer(sections, many=True)
         return Response(serialized_section.data, status=status.HTTP_200_OK)
 
 class SectionDetailView(APIView):
@@ -21,7 +21,7 @@ class SectionDetailView(APIView):
     def get(self, _request, pk):
         try:
             section = Section.objects.get(pk=pk)
-            serialized_section = SectionSerializer(section)
+            serialized_section = PopulatedSectionSerializer(section)
             return Response(serialized_section.data, status=status.HTTP_200_OK)
         except Section.DoesNotExist:
             raise NotFound()

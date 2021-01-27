@@ -4,14 +4,14 @@ from rest_framework import status
 from rest_framework.exceptions import NotFound
 
 from .models import Genre
-from .serializers.common import GenreSerializer
+from .serializers.populated import PopulatedGenreSerializer
 
 class GenreListView(APIView):
     """ View for get request to /genre s """
 
     def get(self, _request):
         genres = Genre.objects.all()
-        serialized_genre = GenreSerializer(genres, many=True)
+        serialized_genre = PopulatedGenreSerializer(genres, many=True)
         return Response(serialized_genre.data, status=status.HTTP_200_OK)
 
 class GenreDetailView(APIView):
@@ -21,7 +21,7 @@ class GenreDetailView(APIView):
     def get(self, _request, pk):
         try:
             genre = Genre.objects.get(pk=pk)
-            serialized_genre = GenreSerializer(genre)
+            serialized_genre = PopulatedGenreSerializer(genre)
             return Response(serialized_genre.data, status=status.HTTP_200_OK)
         except Genre.DoesNotExist:
             raise NotFound()

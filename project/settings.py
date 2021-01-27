@@ -40,10 +40,10 @@ INSTALLED_APPS = [
     'rest_framework',
     'jwt_auth',
     'cinemas',
-    'sections',
     'films',
     'scheduling_slots',
     'genres',
+    'sections',
 ]
 
 MIDDLEWARE = [

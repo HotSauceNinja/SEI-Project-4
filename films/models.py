@@ -9,11 +9,12 @@ class Film(models.Model):
     country = models.CharField(max_length=50)
     run_time = models.DurationField()
     plot = models.CharField(max_length=600)
-    genre = models.CharField(max_length=50)
     poster = models.CharField(max_length=500)
     distributor = models.CharField(max_length=50)
     film_format = models.CharField(max_length=50)
     submission_date = models.DateTimeField(auto_now_add=True)
+    genre = models.ManyToManyField('genres.Genre', related_name='films')
+    section = models.ManyToManyField('sections.Section', related_name='films')
 
     def __str__(self):
         return f"{self.title} - {self.director}"
