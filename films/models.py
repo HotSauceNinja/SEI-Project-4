@@ -4,7 +4,7 @@ from django.core.validators import MinValueValidator
 # Film model
 class Film(models.Model):
     title = models.CharField(max_length=50, unique=True)
-    director = models.CharField(max_length=100, unique=True)
+    director = models.CharField(max_length=100)
     year_released = models.PositiveIntegerField(validators=[MinValueValidator(1900)])
     country = models.CharField(max_length=50)
     run_time = models.DurationField()

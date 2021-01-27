@@ -5,13 +5,14 @@ from rest_framework.exceptions import NotFound
 
 from .models import Film
 from .serializers.common import FilmSerializer
+from .serializers.populated import PopulatedFilmSerializer
 
 class FilmListView(APIView):
     """ View for get request to /films """
 
     def get(self, _request):
         films = Film.objects.all()
-        serialized_film = FilmSerializer(films, many=True)
+        serialized_film = PopulatedFilmSerializer(films, many=True)
         return Response(serialized_film.data, status=status.HTTP_200_OK)
 
     def post(self, request):
@@ -34,7 +35,7 @@ class FilmDetailView(APIView):
     # show one film
     def get(self, _request, pk):
         film = self.get_film(pk=pk)
-        serialized_film = FilmSerializer(film)
+        serialized_film = PopulatedFilmSerializer(film)
         return Response(serialized_film.data, status=status.HTTP_200_OK)
 
     # edit one film

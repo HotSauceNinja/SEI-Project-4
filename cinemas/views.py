@@ -5,13 +5,14 @@ from rest_framework.exceptions import NotFound
 
 from .models import Cinema
 from .serializers.common import CinemaSerializer
+from .serializers.populated import PopulatedCinemaSerializer
 
 class CinemaListView(APIView):
     """ View for get request to /cinemas """
 
     def get(self, _request):
         cinemas = Cinema.objects.all()
-        serialized_cinema = CinemaSerializer(cinemas, many=True)
+        serialized_cinema = PopulatedCinemaSerializer(cinemas, many=True)
         return Response(serialized_cinema.data, status=status.HTTP_200_OK)
 
 class CinemaDetailView(APIView):
@@ -21,7 +22,7 @@ class CinemaDetailView(APIView):
     def get(self, _request, pk):
         try:
             cinema = Cinema.objects.get(pk=pk)
-            serialized_cinema = CinemaSerializer(cinema)
+            serialized_cinema = PopulatedCinemaSerializer(cinema)
             return Response(serialized_cinema.data, status=status.HTTP_200_OK)
         except Cinema.DoesNotExist:
             raise NotFound()
