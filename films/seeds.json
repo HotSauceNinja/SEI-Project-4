@@ -64,9 +64,9 @@
     "submission_date": "2021-01-27T12:53:20.956Z",
     "creator": 1,
     "genre": [
-      9,
       2,
-      5
+      5,
+      9
     ],
     "section": [
       4
@@ -207,10 +207,10 @@
     "submission_date": "2021-01-27T22:03:27.150Z",
     "creator": 1,
     "genre": [
-      9,
-      11,
       5,
-      7
+      7,
+      9,
+      11
     ],
     "section": [
       4

@@ -1,78 +1,815 @@
 [
 {
   "model": "scheduling_slots.slot",
-  "pk": 1,
+  "pk": 17,
   "fields": {
-    "start_time": "2021-06-16T17:00:00Z",
-    "end_time": "2021-06-16T18:41:00Z",
-    "scheduled_by": 1,
-    "cinema": 5,
-    "film": 1
+    "start_time": "2021-06-17T17:30:00Z",
+    "end_time": "2021-06-17T19:30:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
   }
 },
 {
   "model": "scheduling_slots.slot",
-  "pk": 2,
+  "pk": 18,
   "fields": {
-    "start_time": "2021-06-16T19:00:00Z",
-    "end_time": "2021-06-16T21:00:00Z",
-    "scheduled_by": 1,
+    "start_time": "2021-06-17T20:30:00Z",
+    "end_time": "2021-06-17T23:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 19,
+  "fields": {
+    "start_time": "2021-06-18T18:00:00Z",
+    "end_time": "2021-06-18T20:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 20,
+  "fields": {
+    "start_time": "2021-06-18T19:00:00Z",
+    "end_time": "2021-06-18T21:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 21,
+  "fields": {
+    "start_time": "2021-06-18T19:00:00Z",
+    "end_time": "2021-06-18T21:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 22,
+  "fields": {
+    "start_time": "2021-06-18T18:00:00Z",
+    "end_time": "2021-06-18T20:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 23,
+  "fields": {
+    "start_time": "2021-06-18T19:00:00Z",
+    "end_time": "2021-06-18T21:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 24,
+  "fields": {
+    "start_time": "2021-06-18T17:30:00Z",
+    "end_time": "2021-06-18T19:30:00Z",
+    "scheduled_by": 4,
     "cinema": 2,
     "film": null
   }
 },
 {
   "model": "scheduling_slots.slot",
-  "pk": 3,
+  "pk": 25,
   "fields": {
-    "start_time": "2021-06-16T20:00:00Z",
-    "end_time": "2021-06-16T22:00:00Z",
-    "scheduled_by": 1,
-    "cinema": 1,
+    "start_time": "2021-06-18T20:00:00Z",
+    "end_time": "2021-06-18T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 2,
     "film": null
   }
 },
 {
   "model": "scheduling_slots.slot",
-  "pk": 6,
+  "pk": 26,
   "fields": {
-    "start_time": "2021-06-18T18:00:00Z",
-    "end_time": "2021-06-18T19:41:00Z",
-    "scheduled_by": 1,
-    "cinema": 6,
-    "film": 1
+    "start_time": "2021-06-18T19:00:00Z",
+    "end_time": "2021-06-18T21:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 5,
+    "film": null
   }
 },
 {
   "model": "scheduling_slots.slot",
-  "pk": 9,
+  "pk": 27,
   "fields": {
-    "start_time": "2021-01-28T18:00:00Z",
-    "end_time": "2021-01-28T19:41:00Z",
-    "scheduled_by": 1,
-    "cinema": 6,
-    "film": 4
-  }
-},
-{
-  "model": "scheduling_slots.slot",
-  "pk": 15,
-  "fields": {
-    "start_time": "2021-06-16T17:00:00Z",
-    "end_time": "2021-06-16T18:41:00Z",
+    "start_time": "2021-06-18T20:00:00Z",
+    "end_time": "2021-06-18T22:00:00Z",
     "scheduled_by": 5,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 28,
+  "fields": {
+    "start_time": "2021-06-19T17:30:00Z",
+    "end_time": "2021-06-19T19:30:00Z",
+    "scheduled_by": 3,
     "cinema": 1,
     "film": null
   }
 },
 {
   "model": "scheduling_slots.slot",
-  "pk": 16,
+  "pk": 29,
   "fields": {
-    "start_time": "2021-06-16T17:00:00Z",
-    "end_time": "2021-06-16T21:00:00Z",
+    "start_time": "2021-06-19T20:00:00Z",
+    "end_time": "2021-06-19T22:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 30,
+  "fields": {
+    "start_time": "2021-06-19T14:30:00Z",
+    "end_time": "2021-06-19T16:30:00Z",
+    "scheduled_by": 6,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 31,
+  "fields": {
+    "start_time": "2021-06-19T20:00:00Z",
+    "end_time": "2021-06-19T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 32,
+  "fields": {
+    "start_time": "2021-06-19T17:30:00Z",
+    "end_time": "2021-06-19T19:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 33,
+  "fields": {
+    "start_time": "2021-06-19T11:30:00Z",
+    "end_time": "2021-06-19T13:30:00Z",
+    "scheduled_by": 5,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 34,
+  "fields": {
+    "start_time": "2021-06-19T20:00:00Z",
+    "end_time": "2021-06-19T22:00:00Z",
+    "scheduled_by": 5,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 35,
+  "fields": {
+    "start_time": "2021-06-19T18:00:00Z",
+    "end_time": "2021-06-19T20:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 5,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 36,
+  "fields": {
+    "start_time": "2021-06-19T20:00:00Z",
+    "end_time": "2021-06-19T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 37,
+  "fields": {
+    "start_time": "2021-06-20T17:30:00Z",
+    "end_time": "2021-06-20T19:30:00Z",
     "scheduled_by": 4,
     "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 38,
+  "fields": {
+    "start_time": "2021-06-20T20:00:00Z",
+    "end_time": "2021-06-20T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 39,
+  "fields": {
+    "start_time": "2021-06-20T14:30:00Z",
+    "end_time": "2021-06-20T16:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 40,
+  "fields": {
+    "start_time": "2021-06-20T20:00:00Z",
+    "end_time": "2021-06-20T22:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 41,
+  "fields": {
+    "start_time": "2021-06-20T17:30:00Z",
+    "end_time": "2021-06-20T19:30:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 42,
+  "fields": {
+    "start_time": "2021-06-20T11:30:00Z",
+    "end_time": "2021-06-20T13:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 43,
+  "fields": {
+    "start_time": "2021-06-20T20:00:00Z",
+    "end_time": "2021-06-20T22:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 44,
+  "fields": {
+    "start_time": "2021-06-20T18:00:00Z",
+    "end_time": "2021-06-20T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 5,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 45,
+  "fields": {
+    "start_time": "2021-06-20T17:30:00Z",
+    "end_time": "2021-06-20T19:30:00Z",
+    "scheduled_by": 6,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 46,
+  "fields": {
+    "start_time": "2021-06-20T20:00:00Z",
+    "end_time": "2021-06-20T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 47,
+  "fields": {
+    "start_time": "2021-06-21T17:30:00Z",
+    "end_time": "2021-06-21T19:30:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 48,
+  "fields": {
+    "start_time": "2021-06-21T20:00:00Z",
+    "end_time": "2021-06-21T22:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 49,
+  "fields": {
+    "start_time": "2021-06-21T20:00:00Z",
+    "end_time": "2021-06-21T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 50,
+  "fields": {
+    "start_time": "2021-06-21T18:00:00Z",
+    "end_time": "2021-06-21T20:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 51,
+  "fields": {
+    "start_time": "2021-06-21T20:00:00Z",
+    "end_time": "2021-06-21T22:00:00Z",
+    "scheduled_by": 5,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 52,
+  "fields": {
+    "start_time": "2021-06-22T18:00:00Z",
+    "end_time": "2021-06-22T20:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 53,
+  "fields": {
+    "start_time": "2021-06-22T21:00:00Z",
+    "end_time": "2021-06-22T23:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 54,
+  "fields": {
+    "start_time": "2021-06-22T19:00:00Z",
+    "end_time": "2021-06-22T21:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 55,
+  "fields": {
+    "start_time": "2021-06-22T17:30:00Z",
+    "end_time": "2021-06-22T19:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 56,
+  "fields": {
+    "start_time": "2021-06-22T20:00:00Z",
+    "end_time": "2021-06-22T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 57,
+  "fields": {
+    "start_time": "2021-06-23T17:30:00Z",
+    "end_time": "2021-06-23T19:30:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 58,
+  "fields": {
+    "start_time": "2021-06-23T20:00:00Z",
+    "end_time": "2021-06-23T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 59,
+  "fields": {
+    "start_time": "2021-06-23T20:00:00Z",
+    "end_time": "2021-06-23T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 60,
+  "fields": {
+    "start_time": "2021-06-23T17:30:00Z",
+    "end_time": "2021-06-23T19:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 61,
+  "fields": {
+    "start_time": "2021-06-23T20:00:00Z",
+    "end_time": "2021-06-23T22:00:00Z",
+    "scheduled_by": 5,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 62,
+  "fields": {
+    "start_time": "2021-06-24T17:30:00Z",
+    "end_time": "2021-06-24T19:30:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 63,
+  "fields": {
+    "start_time": "2021-06-24T20:00:00Z",
+    "end_time": "2021-06-24T22:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 64,
+  "fields": {
+    "start_time": "2021-06-24T20:00:00Z",
+    "end_time": "2021-06-24T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 65,
+  "fields": {
+    "start_time": "2021-06-24T18:00:00Z",
+    "end_time": "2021-06-24T20:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 66,
+  "fields": {
+    "start_time": "2021-06-24T21:00:00Z",
+    "end_time": "2021-06-24T23:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 67,
+  "fields": {
+    "start_time": "2021-06-24T19:00:00Z",
+    "end_time": "2021-06-24T21:00:00Z",
+    "scheduled_by": 5,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 68,
+  "fields": {
+    "start_time": "2021-06-24T18:00:00Z",
+    "end_time": "2021-06-24T20:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 5,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 69,
+  "fields": {
+    "start_time": "2021-06-25T17:30:00Z",
+    "end_time": "2021-06-25T19:30:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 70,
+  "fields": {
+    "start_time": "2021-06-25T20:00:00Z",
+    "end_time": "2021-06-25T22:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 71,
+  "fields": {
+    "start_time": "2021-06-25T17:30:00Z",
+    "end_time": "2021-06-25T19:30:00Z",
+    "scheduled_by": 4,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 72,
+  "fields": {
+    "start_time": "2021-06-25T20:00:00Z",
+    "end_time": "2021-06-25T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 73,
+  "fields": {
+    "start_time": "2021-06-25T20:00:00Z",
+    "end_time": "2021-06-25T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 74,
+  "fields": {
+    "start_time": "2021-06-25T20:00:00Z",
+    "end_time": "2021-06-25T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 75,
+  "fields": {
+    "start_time": "2021-06-25T19:00:00Z",
+    "end_time": "2021-06-25T21:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 5,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 76,
+  "fields": {
+    "start_time": "2021-06-25T20:00:00Z",
+    "end_time": "2021-06-25T22:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 77,
+  "fields": {
+    "start_time": "2021-06-26T18:00:00Z",
+    "end_time": "2021-06-26T20:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 78,
+  "fields": {
+    "start_time": "2021-06-26T21:00:00Z",
+    "end_time": "2021-06-26T23:00:00Z",
+    "scheduled_by": 3,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 79,
+  "fields": {
+    "start_time": "2021-06-26T14:30:00Z",
+    "end_time": "2021-06-26T16:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 80,
+  "fields": {
+    "start_time": "2021-06-26T20:00:00Z",
+    "end_time": "2021-06-26T22:00:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 81,
+  "fields": {
+    "start_time": "2021-06-26T20:00:00Z",
+    "end_time": "2021-06-26T22:00:00Z",
+    "scheduled_by": 6,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 82,
+  "fields": {
+    "start_time": "2021-06-26T17:30:00Z",
+    "end_time": "2021-06-26T19:30:00Z",
+    "scheduled_by": 4,
+    "cinema": 3,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 83,
+  "fields": {
+    "start_time": "2021-06-26T20:00:00Z",
+    "end_time": "2021-06-26T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 84,
+  "fields": {
+    "start_time": "2021-06-26T18:00:00Z",
+    "end_time": "2021-06-26T20:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 5,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 85,
+  "fields": {
+    "start_time": "2021-06-26T20:00:00Z",
+    "end_time": "2021-06-26T22:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 6,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 86,
+  "fields": {
+    "start_time": "2021-06-27T11:30:00Z",
+    "end_time": "2021-06-27T13:30:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 87,
+  "fields": {
+    "start_time": "2021-06-27T18:00:00Z",
+    "end_time": "2021-06-27T20:00:00Z",
+    "scheduled_by": 4,
+    "cinema": 1,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 88,
+  "fields": {
+    "start_time": "2021-06-27T14:30:00Z",
+    "end_time": "2021-06-27T16:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 4,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 89,
+  "fields": {
+    "start_time": "2021-06-27T11:30:00Z",
+    "end_time": "2021-06-27T13:30:00Z",
+    "scheduled_by": 7,
+    "cinema": 2,
+    "film": null
+  }
+},
+{
+  "model": "scheduling_slots.slot",
+  "pk": 90,
+  "fields": {
+    "start_time": "2021-06-27T11:30:00Z",
+    "end_time": "2021-06-27T13:30:00Z",
+    "scheduled_by": 5,
+    "cinema": 6,
     "film": null
   }
 }
