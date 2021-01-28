@@ -1,7 +1,7 @@
 from rest_framework import serializers
 from django.contrib.auth import get_user_model
 from django.contrib.auth.hashers import make_password
-from django.contrib.auth import password_validation
+# from django.contrib.auth import password_validation
 from django.core.exceptions import ValidationError
 
 User = get_user_model()
@@ -35,3 +35,9 @@ class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
         fields = '__all__'
+
+class NestedUserSerializer(serializers.ModelSerializer):
+    """ to use in nested serializers to avoid endless loop """
+    class Meta:
+        model = User
+        fields = ('id', 'username', 'profile_photo')

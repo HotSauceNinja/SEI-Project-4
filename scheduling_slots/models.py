@@ -8,28 +8,38 @@ class Slot(models.Model):
     start_time = models.DateTimeField()
     end_time = models.DateTimeField(blank=True, null=True)
 
-    # link cinema with slot with one to many relationship
+        # One to many Relationship - a user can schedule many slots
+    scheduled_by = models.ForeignKey(
+        "jwt_auth.User",
+        blank=True,
+        null=True,
+        related_name="scheduled_slots",
+        # If a user is deleted I want to still be able to access the slots they created
+        on_delete=models.DO_NOTHING
+    )
+
+    # One to many relationship - a cinema can have many screening slots 
     cinema = models.ForeignKey(
         "cinemas.Cinema",
         related_name="slots",
         on_delete=models.CASCADE
     )
 
-    # link film with slot with one to many relationship
+    # One to many relationship - a film can have many screening slots
     film = models.ForeignKey(
         "films.Film",
-        default='00 00:02:00',
         blank=True,
         null=True,
         related_name="slots",
         on_delete=models.SET_NULL
     )
 
-    def save(self):
+    def save(self, force_insert=False, force_update=False, using=None,
+          update_fields=None):
         """ before saving the newly created model """
 
         # check that the start time is in the future
-        if not self.start_time > timezone.now():
+        if self.start_time <= timezone.now():
             raise ValidationError('start_time must be greater than current time')
         
         # if there is not a set end time, make end time two hours from start time

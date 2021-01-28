@@ -5,18 +5,23 @@ from rest_framework.exceptions import NotFound
 from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Slot
+from .serializers.populated import PopulatedSlotSerializer
 from .serializers.common import SlotSerializer
 
 class SlotListView(APIView):
     """ View for get request to /slots """
     permission_classes = (IsAuthenticatedOrReadOnly, )
 
+    # show all slots - can be seen by all users
     def get(self, _request):
         slots = Slot.objects.all()
-        serialized_slot = SlotSerializer(slots, many=True)
+        serialized_slot = PopulatedSlotSerializer(slots, many=True)
         return Response(serialized_slot.data, status=status.HTTP_200_OK)
 
+    # create a slot - only logged in users
     def post(self, request):
+        # add scheduled_by id into the request before sending into serializer
+        request.data["scheduled_by"] = request.user.id
         slot_to_create = SlotSerializer(data=request.data)
         if slot_to_create.is_valid():
             slot_to_create.save()
@@ -34,13 +39,13 @@ class SlotDetailView(APIView):
         except Slot.DoesNotExist:
             raise NotFound()
 
-    # show one slot
+    # show one slot - can be seen by all users
     def get(self, _request, pk):
         slot = self.get_slot(pk=pk)
-        serialized_slot = SlotSerializer(slot)
+        serialized_slot = PopulatedSlotSerializer(slot)
         return Response(serialized_slot.data, status=status.HTTP_200_OK)
 
-    # edit one slot
+    # edit one slot - all logged in users can edit a slot
     def put(self, request, pk):
         slot_to_update = self.get_slot(pk=pk)
         updated_slot = SlotSerializer(slot_to_update, data=request.data)
@@ -49,7 +54,7 @@ class SlotDetailView(APIView):
             return Response(updated_slot.data, status=status.HTTP_202_ACCEPTED)
         return Response(updated_slot.errors, status=status.HTTP_422_UNPROCESSABLE_ENTITY)
 
-    #  delete one slot
+    #  delete one slot - all logged in users can delete a slot
     def delete(self, _request, pk):
         slot_to_delete = self.get_slot(pk=pk)
         slot_to_delete.delete()

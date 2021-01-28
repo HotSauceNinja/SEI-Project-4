@@ -13,6 +13,7 @@
     "distributor": "Piki Films",
     "film_format": "DCP",
     "submission_date": "2021-01-27T12:47:47.212Z",
+    "creator": 1,
     "genre": [
       2,
       4,
@@ -37,9 +38,10 @@
     "distributor": "Universal Pictures",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T12:50:43.356Z",
+    "creator": 1,
     "genre": [
-      6,
-      10
+      10,
+      6
     ],
     "section": [
       5
@@ -60,10 +62,11 @@
     "distributor": "Disney",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T12:53:20.956Z",
+    "creator": 1,
     "genre": [
+      9,
       2,
-      5,
-      9
+      5
     ],
     "section": [
       4
@@ -84,6 +87,7 @@
     "distributor": "Miramax Films",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T13:56:08.866Z",
+    "creator": 1,
     "genre": [
       1,
       3
@@ -107,6 +111,7 @@
     "distributor": "Kasbah Films",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T21:51:04.136Z",
+    "creator": 1,
     "genre": [
       1,
       4
@@ -130,6 +135,7 @@
     "distributor": "Warner Bros.",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T21:54:27.468Z",
+    "creator": 1,
     "genre": [
       1
     ],
@@ -152,6 +158,7 @@
     "distributor": "Universal Pictures",
     "film_format": "DCP",
     "submission_date": "2021-01-27T21:58:13.533Z",
+    "creator": 1,
     "genre": [
       2,
       6
@@ -175,6 +182,7 @@
     "distributor": "Gaumont",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T22:01:01.519Z",
+    "creator": 1,
     "genre": [
       1
     ],
@@ -197,11 +205,12 @@
     "distributor": "Disney",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:03:27.150Z",
+    "creator": 1,
     "genre": [
-      5,
-      7,
       9,
-      11
+      11,
+      5,
+      7
     ],
     "section": [
       4
@@ -222,6 +231,7 @@
     "distributor": "Miramax",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T22:06:04.918Z",
+    "creator": 1,
     "genre": [
       2
     ],
@@ -244,6 +254,7 @@
     "distributor": "Lorber Films",
     "film_format": "DCP",
     "submission_date": "2021-01-27T22:08:41.941Z",
+    "creator": 1,
     "genre": [
       4
     ],
@@ -266,9 +277,10 @@
     "distributor": "Transilvania Film",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:13:25.793Z",
+    "creator": 1,
     "genre": [
-      2,
-      8
+      8,
+      2
     ],
     "section": [
       3
@@ -289,6 +301,7 @@
     "distributor": "n/a",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:16:38.578Z",
+    "creator": 1,
     "genre": [
       2,
       4
@@ -312,6 +325,7 @@
     "distributor": "Media Pro Pictures",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:18:41.214Z",
+    "creator": 1,
     "genre": [
       2
     ],
@@ -334,6 +348,7 @@
     "distributor": "Romania Film",
     "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:22:39.582Z",
+    "creator": 1,
     "genre": [
       2,
       4
@@ -357,6 +372,7 @@
     "distributor": "Transilvania Film",
     "film_format": "DCP",
     "submission_date": "2021-01-27T22:25:00.391Z",
+    "creator": 1,
     "genre": [
       2,
       3
@@ -380,6 +396,7 @@
     "distributor": "Charlie Chaplin Productions",
     "film_format": "70 mm",
     "submission_date": "2021-01-27T22:28:39.797Z",
+    "creator": 1,
     "genre": [
       2,
       5
