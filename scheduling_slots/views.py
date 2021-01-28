@@ -2,12 +2,14 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Slot
 from .serializers.common import SlotSerializer
 
 class SlotListView(APIView):
     """ View for get request to /slots """
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         slots = Slot.objects.all()
@@ -23,6 +25,7 @@ class SlotListView(APIView):
 
 class SlotDetailView(APIView):
     """ View for get request to /slots/id """
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get_slot(self, pk):
     # returns slot from db by its pk(id) or responds 404 not found

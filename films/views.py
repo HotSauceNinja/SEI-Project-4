@@ -2,6 +2,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.exceptions import NotFound
+from rest_framework.permissions import IsAuthenticatedOrReadOnly
 
 from .models import Film
 from .serializers.common import FilmSerializer
@@ -9,6 +10,7 @@ from .serializers.populated import PopulatedFilmSerializer
 
 class FilmListView(APIView):
     """ View for get request to /films """
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get(self, _request):
         films = Film.objects.all()
@@ -24,6 +26,7 @@ class FilmListView(APIView):
 
 class FilmDetailView(APIView):
     """ View for get request to /films/id """
+    permission_classes = (IsAuthenticatedOrReadOnly, )
 
     def get_film(self, pk):
     # returns film from db by its pk(id) or responds 404 not found
