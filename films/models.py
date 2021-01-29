@@ -19,7 +19,6 @@ class Film(models.Model):
     section = models.ManyToManyField(
       'sections.Section',
       blank=True,
-      null=True,
       related_name='films')
 
     # One to many Relationship - a user can create many films

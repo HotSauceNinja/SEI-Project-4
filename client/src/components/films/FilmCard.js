@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function FilmCard({ title, yearReleased, director, poster, country, genre, section }) {
+function FilmCard({ id,title, yearReleased, director, poster, country, genre, section }) {
   return (
     <div className="card">
-      <Link to="/films/${id}" >
+      <Link to={`/films/${id}`} >
         <div className="container">
 
           <div className="card-header">

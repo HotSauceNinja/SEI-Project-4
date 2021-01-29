@@ -9,6 +9,7 @@ import CinemaIndex from './components/cinemas/CinemaIndex'
 import UserShow from './components/users/UserShow'
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
+import FilmShow from './components/films/FilmShow'
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/schedule/" component={SchedulingSlots} />
+          <Route path="/films/:id" component={FilmShow} />
           <Route path="/films/" component={FilmIndex} />
           <Route path="/cinemas/" component={CinemaIndex} />
           <Route path="/profile/" component={UserShow} />

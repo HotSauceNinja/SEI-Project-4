@@ -12,3 +12,7 @@ export function getAllCinemas() {
 export function getAllFilms() {
   return axios.get(`${baseUrl}films/`)
 }
+
+export function getSingleFilm(id) {
+  return axios.get(`${baseUrl}films/${id}/`)
+}
