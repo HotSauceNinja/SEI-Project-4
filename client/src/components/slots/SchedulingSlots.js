@@ -2,7 +2,9 @@ import React from 'react'
 
 function SchedulingSlots(){
   return (
-    <h1>Slots go here</h1>
+    <div className="container">
+      Show SchedulingSlots
+    </div>
   )
 }
 

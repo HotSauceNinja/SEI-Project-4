@@ -8,7 +8,8 @@ function Nav(){
         <div className="navbar-brand">
           <Link to="/" className="navbar-item">Home</Link>
           <Link to="/schedule/" className="navbar-item">Schedule</Link>
-          <Link to="/films/" className="navbar-item">Films</Link>      
+          <Link to="/films/" className="navbar-item">Films</Link>   
+          <Link to="/cinemas/" className="navbar-item">Cinemas</Link>    
         </div>
       
         <div className="navbar-menu is-active">
@@ -16,12 +17,12 @@ function Nav(){
             <div className="navbar-item has-dropdown is-hoverable">
               <div className="navbar-item">User</div>
               <div className="navbar-dropdown is-right">
-                <Link to="/profile" className="navbar-item">Profile</Link>
                 <Link to="/login/" className="navbar-item">Login</Link>
                 <Link to="/register/" className="navbar-item">Register</Link>
+                <Link to="/profile" className="navbar-item">Profile</Link>
+                <Link to="/logout/" className="navbar-item">Logout</Link>
               </div>
             </div>
-            <div ></div>
           </div>
         </div>
       </div>
