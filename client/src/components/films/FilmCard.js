@@ -26,7 +26,7 @@ function FilmCard({ id,title, yearReleased, director, poster, country, genre, se
                   :
                   <div>            
                     {genre.map(type => (
-                      <span key={type.id}> {type.name} | </span>
+                      <span key={type.id}> {type.name} </span>
                     ))}                
                   </div>
                 }
@@ -47,13 +47,9 @@ function FilmCard({ id,title, yearReleased, director, poster, country, genre, se
                   </div>
                 }
                 <br />
-                <div>
-
-                </div>
               </div>
             </div>
-            
-        
+
           </div>
           
         </div>        

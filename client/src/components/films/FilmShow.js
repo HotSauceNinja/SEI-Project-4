@@ -40,8 +40,55 @@ function FilmShow() {
         </div>
         :
         <div>
-          <h1 className="title">{film.title}</h1>
-          
+          <h1 className="title has-text-centered">{film.title} ({film.yearReleased})</h1>
+          <div className="columns">
+            <div className="column is-one-third">
+              <img src={film.poster} alt={film.title} className="image" />              
+            </div>
+
+            <div className="card-content">
+              <div className="container mr-3" >
+                <div>Dir: {film.director}</div>                
+                { !film.genre ? 
+                  <div>Loading</div>
+                  :
+                  <div>Genre:            
+                    {film.genre.map(type => (
+                      <span key={type.id}> {type.name} </span>
+                    ))}                
+                  </div>
+                }
+                <br />
+                <p>{film.plot}</p>
+                <br />
+                <p>Run Time: {film.runTime}</p> 
+                <p>Film Format: {film.filmFormat}</p>
+                <p>Countries: {film.country}</p>  
+                <p>Distributor: {film.distributor}</p>
+                <br />
+                <div>Section:
+                  { !film.section ? 
+                    <div>Loading</div>
+                    :
+                    <span>        
+                      { !film.section.length ? 
+                        <div>Not assigned yet</div>
+                        :
+                        film.section.map(selected => (
+                          <span key={selected.id}> {selected.name} </span>
+                        ))           
+                      }  
+                    </span>
+                  }
+                </div>
+                <br />
+              </div>
+            </div>
+          </div>
+
+          <div>
+            Screening Slots / map through:
+          </div>
         </div>
       }
     </div>
