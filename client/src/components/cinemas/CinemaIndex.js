@@ -1,5 +1,6 @@
 import React from 'react'
 import { getAllCinemas } from '../../lib/api'
+import CinemaCard from './CinemaCard'
 
 function CinemaIndex() {
 
@@ -23,7 +24,9 @@ function CinemaIndex() {
 
   return (
     <div className="container">
-      <h1>Cinemas</h1>
+      <h1 className="title has-text-centered">Cinemas</h1>
+      <br />
+
       <div className="container">
         {!cinemas ? 
           <div className="hero is-fullheight title">
@@ -38,7 +41,13 @@ function CinemaIndex() {
             }
           </div>
           :
-          <div>Show em</div>
+          <div className="columns is-multiline">
+            {cinemas.map(cinema => (
+              <div key={cinema.id} className="column is-half-tablet is-one-third-desktop">
+                <CinemaCard {...cinema} />
+              </div>
+            ))}
+          </div>
         }
       </div>
     </div>

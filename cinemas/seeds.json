@@ -4,7 +4,7 @@
   "pk": 1,
   "fields": {
     "name": "Filmhouse",
-    "address": "88 Lothian Road, Edinburgh EH3 9BZ Scotland, UK",
+    "address": "88 Lothian Road, Edinburgh EH3 9BZ",
     "latitude": "55.945419",
     "longitude": "-3.205360",
     "phone_number": "0131 228 2688",
@@ -30,7 +30,7 @@
   "pk": 3,
   "fields": {
     "name": "Cineworld Fountain Park",
-    "address": "130 Dundee Street, Edinburgh, EH11 1AF, Scotland",
+    "address": "130 Dundee Street, Edinburgh EH11 1AF",
     "latitude": "55.940601",
     "longitude": "-3.217380",
     "phone_number": "0131 228 8788",
@@ -43,7 +43,7 @@
   "pk": 4,
   "fields": {
     "name": "VUE Omni",
-    "address": "Omni Centre, 61/11 Leith Street, EH1 3AU Edinburgh",
+    "address": "Omni Centre, 61/11 Leith Street, Edinburgh EH1 3AU",
     "latitude": "55.954632",
     "longitude": "-3.187100",
     "phone_number": "0871 224 0240",
@@ -56,7 +56,7 @@
   "pk": 5,
   "fields": {
     "name": "Cameo",
-    "address": "38 Home Street, Edinburgh, EH3 9LZ Scotland",
+    "address": "38 Home Street, Edinburgh EH3 9LZ",
     "latitude": "55.944900",
     "longitude": "-3.197430",
     "phone_number": "0131 228 4141",
