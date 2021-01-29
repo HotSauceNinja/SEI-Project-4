@@ -7,7 +7,7 @@ import jwt
 User = get_user_model()
 
 class JWTAuthentication(BasicAuthentication):
-    """ Deals with incoming requests; will be applied over every route 
+    """ Deals with incoming requests; will be applied over every route
     and once they are through, it will determine what each can do next """
 
     def authenticate(self, request):
