@@ -4,13 +4,17 @@ import { getAllCinemas } from '../../lib/api'
 function CinemaIndex() {
 
   const [cinemas, setCinemas] = React.useState(null)
+  const [hasErr, setHasErr] = React.useState(false)
 
   React.useEffect(() => {
     const getData = async () => {
-      const { data } = await getAllCinemas()
-      setCinemas(data)
+      try {
+        const { data } = await getAllCinemas()
+        setCinemas(data)
+      } catch (err) {
+        setHasErr(err)
+      }
     }
-
     getData()
   }, [])
 
@@ -20,7 +24,23 @@ function CinemaIndex() {
   return (
     <div className="container">
       <h1>Cinemas</h1>
-      <div></div>
+      <div className="container">
+        {!cinemas ? 
+          <div className="hero is-fullheight title">
+            { hasErr ? 
+              <div className="hero-body">
+                <div className="container has-text-centered">Something went wrong</div>
+              </div> 
+              : 
+              <div className="hero-body">
+                <div className="container has-text-centered">Loading</div>
+              </div>
+            }
+          </div>
+          :
+          <div>Show em</div>
+        }
+      </div>
     </div>
   )
 }
