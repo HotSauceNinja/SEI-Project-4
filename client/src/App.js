@@ -5,7 +5,9 @@ import Nav from './components/common/Nav'
 import Home from './components/common/Home'
 import SchedulingSlots from './components/slots/SchedulingSlots'
 import FilmIndex from './components/films/FilmIndex'
-import UserShow from './components/user/UserShow'
+import UserShow from './components/users/UserShow'
+import Login from './components/auth/Login'
+import Register from './components/auth/Register'
 
 function App() {
   return (
@@ -14,9 +16,11 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/scheduling/" component={SchedulingSlots} />
+          <Route path="/schedule/" component={SchedulingSlots} />
           <Route path="/films/" component={FilmIndex} />
-          <Route path="/user/" component={UserShow} />
+          <Route path="/profile/" component={UserShow} />
+          <Route path="/login/" component={Login} />
+          <Route path="/register/" component={Register} />
         </Switch>
       </div>
     </BrowserRouter>    
