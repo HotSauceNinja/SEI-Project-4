@@ -1,8 +1,12 @@
 import React from 'react'
+import Footer from './Footer'
 
 function Home(){
   return (
-    <div>Home page goes here</div>
+    <div className="container">
+      <div>Main goes here</div>
+      <Footer />
+    </div>
   )
 }
 
