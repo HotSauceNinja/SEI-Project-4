@@ -7,3 +7,8 @@ const baseUrl = '/api/'
 export function getAllCinemas() {
   return axios.get(`${baseUrl}cinemas/`)
 }
+
+// * Film Requests
+export function getAllFilms() {
+  return axios.get(`${baseUrl}films/`)
+}

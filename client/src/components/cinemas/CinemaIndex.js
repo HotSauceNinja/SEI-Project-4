@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllCinemas } from '../../lib/api'
+import { getAllCinemas } from '../lib/api'
 import CinemaCard from './CinemaCard'
 
 function CinemaIndex() {

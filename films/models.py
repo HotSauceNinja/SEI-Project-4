@@ -16,7 +16,11 @@ class Film(models.Model):
 
     # Many to Many Relationships:
     genre = models.ManyToManyField('genres.Genre', related_name='films')
-    section = models.ManyToManyField('sections.Section', related_name='films')
+    section = models.ManyToManyField(
+      'sections.Section',
+      blank=True,
+      null=True,
+      related_name='films')
 
     # One to many Relationship - a user can create many films
     creator = models.ForeignKey(
