@@ -98,16 +98,16 @@ function FilmShow() {
                 </div>
                 <br />
                 { isOwner(film.creator.id) &&
-          <div className="field is-grouped is-right">
-            <p className="control">
-              <button className="button is-success">
-                <Link to={`/films/${id}/edit/`}> Edit Film </Link>
-              </button>
-            </p>
-            <p className="control">
-              <button className="button is-danger" onClick={handleDelete}> Delete Film </button>
-            </p>
-          </div>
+                  <div className="field is-grouped is-right">
+                    <p className="control">
+                      <button className="button is-success">
+                        <Link to={`/films/${id}/edit/`}> Edit Film </Link>
+                      </button>
+                    </p>
+                    <p className="control">
+                      <button className="button is-danger" onClick={handleDelete}> Delete Film </button>
+                    </p>
+                  </div>
                 }
               </div>
             </div>

@@ -28,8 +28,12 @@ export function createFilm(formdata) {
   return axios.post(`${baseUrl}films/`, formdata, headers())
 }
 
+export function editFilm(id, formdata) {
+  return axios.put(`${baseUrl}/films/${id}/`, formdata, headers())
+}
+
 export function deleteFilm(id) {
-  return axios.delete(`${baseUrl}films/${id}`, headers())
+  return axios.delete(`${baseUrl}films/${id}/`, headers())
 }
 
 

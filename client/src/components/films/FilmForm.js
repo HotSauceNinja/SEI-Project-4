@@ -42,7 +42,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               <label className="label">Title</label>
               <div className="control">
                 <input
-                  className='input'
+                  className={`input ${errors.title ? 'is-danger' : ''}`}
                   placeholder="Title"
                   onChange={handleChange}
                   name="title"
@@ -56,7 +56,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               <label className="label">Director</label>
               <div className="control">
                 <input
-                  className='input'
+                  className={`input ${errors.director ? 'is-danger' : ''}`}
                   placeholder="Director"
                   onChange={handleChange}
                   name="director"
@@ -70,7 +70,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               <label className="label">Year Released (YYYY)</label>
               <div className="control">
                 <input
-                  className='input'
+                  className={`input ${errors.yearReleased ? 'is-danger' : ''}`}
                   placeholder="Year Released"
                   onChange={handleChange}
                   name="yearReleased"
@@ -85,7 +85,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               <label className="label">Country</label>
               <div className="control">
                 <input
-                  className='input'
+                  className={`input ${errors.country ? 'is-danger' : ''}`}
                   placeholder="Country"
                   onChange={handleChange}
                   name="country"
@@ -97,7 +97,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
 
             <div className="field">
               <label className="label">Genres</label>
-              <div className="control">
+              <div className="control" >
                 <Select
                   options={genreSelectOptions}
                   isMulti
@@ -115,7 +115,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
                 <label className="label">Run Time (hh:mm:ss)</label>
                 <div className="control">
                   <input
-                    className='input'
+                    className={`input ${errors.runTime ? 'is-danger' : ''}`}
                     placeholder="Run Time"
                     onChange={handleChange}
                     name="runTime"
@@ -129,7 +129,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
                 <label className="label">Poster URL</label>
                 <div className="control">
                   <input
-                    className='input'
+                    className={`input ${errors.poster ? 'is-danger' : ''}`}
                     placeholder="Poster URL"
                     onChange={handleChange}
                     name="poster"
@@ -143,7 +143,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
                 <label className="label">Distributor</label>
                 <div className="control">
                   <input
-                    className='input'
+                    className={`input ${errors.distributor ? 'is-danger' : ''}`}
                     placeholder="Distributor"
                     onChange={handleChange}
                     name="distributor"
@@ -187,7 +187,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
           <label className="label">Plot</label>
           <div className="control">
             <textarea
-              className='textarea'
+              className={`textarea ${errors.country ? 'is-danger' : ''}`}
               placeholder="Plot"
               onChange={handleChange}
               name="plot"

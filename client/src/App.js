@@ -11,6 +11,7 @@ import Login from './components/auth/Login'
 import Register from './components/auth/Register'
 import FilmShow from './components/films/FilmShow'
 import FilmNew from './components/films/FilmNew'
+import FilmEdit from './components/films/FilmEdit'
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route path="/schedule/" component={SchedulingSlots} />
+          <Route path="/films/:id/edit" component={FilmEdit} />
           <Route path="/films/new/" component={FilmNew} />
           <Route path="/films/:id/" component={FilmShow} />
           <Route path="/films/" component={FilmIndex} />
