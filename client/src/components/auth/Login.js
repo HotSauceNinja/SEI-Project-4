@@ -1,34 +1,32 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import { loginUser } from '../lib/api'
 import { setToken } from '../lib/auth'
-import { useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
 
 function Login(){
+
+  const history = useHistory()
+  const [error, setError] = React.useState(false)
 
   const { formdata, handleChange } = useForm({
     email: '',
     password: ''
   })
 
-  const history = useHistory()
-
   const handleSubmit = async event => {
     event.preventDefault()
-
-    try {
-      console.log('form ', formdata)
-      
+    try {      
       const { data } = await loginUser(formdata)
-      console.log(data)
       setToken(data.token)
       history.push('/')
-
     } catch (err) {
-      console.log('error data :', err.response.data)
+      setError(true)
     }
+  }
 
-    console.log('submitting :', formdata)
+  const handleFocus = () => {
+    setError(false)
   }
 
   return (
@@ -41,11 +39,12 @@ function Login(){
               <label className="label">Email</label>
               <div className="control">
                 <input
-                  className="input"
+                  className={`input ${error ? 'is-danger' : ''}`}
                   placeholder="Email"
                   onChange={handleChange}
                   name="email"
                   value={formdata.email}
+                  onFocus={handleFocus}
                 />
               </div>
             </div>
@@ -54,7 +53,8 @@ function Login(){
               <label className="label">Password</label>
               <div className="control">
                 <input
-                  className="input"
+                  type='password'
+                  className={`input ${error ? 'is-danger' : ''}`}
                   placeholder="Password"
                   onChange={handleChange}
                   name="password"
@@ -62,7 +62,7 @@ function Login(){
                 />
               </div>
             </div>
-
+            {error && <p className="help is-danger">Your username or password are incorrect</p>}
             <div className="field">
               <button type="submit" className="button">Login</button>
             </div>

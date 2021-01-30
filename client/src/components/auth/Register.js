@@ -5,7 +5,9 @@ import useForm from '../../utils/useForm'
 
 function Register(){
 
-  const { formdata, handleChange } = useForm({
+  const history = useHistory()
+
+  const { formdata, handleChange, errors, setErrors } = useForm({
     firstName: '',
     lastName: '',
     email: '',
@@ -15,20 +17,14 @@ function Register(){
     profilePhoto: ''
   })
 
-  const history = useHistory()
-
   const handleSubmit = async event => {
     event.preventDefault()
-
     try {
       await registerUser(formdata)
       history.push('/login/')
-
     } catch (err) {
-      console.log('error data :', err.response.data)
+      setErrors(err.response.data)
     }
-
-    console.log('submitting :', formdata)
   }
 
   return (
@@ -49,6 +45,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.firstName}</p>}
 
             <div className="field">
               <label className="label">Last Name</label>
@@ -62,6 +59,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.lastName}</p>}
 
             <div className="field">
               <label className="label">Email</label>
@@ -75,6 +73,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.email}</p>}
 
             <div className="field">
               <label className="label">Password</label>
@@ -89,6 +88,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.password}</p>}
 
             <div className="field">
               <label className="label">Password Confirmation</label>
@@ -103,6 +103,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.passwordConfirmation}</p>}
 
             <div className="field">
               <label className="label">Username</label>
@@ -116,6 +117,7 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.username}</p>}
 
             <div className="field">
               <label className="label">Profile Photo</label>
@@ -129,6 +131,8 @@ function Register(){
                 />
               </div>
             </div>
+            {errors && <p className="help is-danger">{errors.profilePhoto}</p>}
+            <br />
 
             <div className="field">
               <button type="submit" className="button">Register</button>
