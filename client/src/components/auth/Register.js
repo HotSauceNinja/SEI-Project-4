@@ -1,4 +1,6 @@
 import React from 'react'
+import { registerUser } from '../lib/api'
+import { useHistory } from 'react-router-dom'
 
 function Register(){
 
@@ -12,21 +14,32 @@ function Register(){
     profilePhoto: ''
   })
 
+  const history = useHistory()
+  console.log(history)
+
   const handleChange = event => {
     setFormdata({ ... formdata, [event.target.name]: event.target.value })
-    console.log('changing', event.target.value)
   }
 
-  const handleSubmit = event => {
+  const handleSubmit = async event => {
     event.preventDefault()
-    console.log('submitting', formdata)
+
+    try {
+      await registerUser(formdata)
+      history.push('/login/')
+
+    } catch (err) {
+      console.log('error data :', err.response.data)
+    }
+
+    console.log('submitting :', formdata)
   }
 
   return (
     <section className="section">
       <div className="container">
         <div className="columns">
-          <form className="column is-half is-offset-one-quarter">
+          <form className="column is-half is-offset-one-quarter" onSubmit={handleSubmit}>
 
             <div className="field">
               <label className="label">First Name</label>
@@ -122,7 +135,7 @@ function Register(){
             </div>
 
             <div className="field">
-              <button type="submit" className="button" onSubmit={handleSubmit}>Register</button>
+              <button type="submit" className="button">Register</button>
             </div>
           </form>
         </div>        
