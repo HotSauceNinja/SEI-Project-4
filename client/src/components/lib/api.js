@@ -21,3 +21,7 @@ export function getSingleFilm(id) {
 export function registerUser(formdata) {
   return axios.post(`${baseUrl}auth/register/`, formdata)
 }
+
+export function loginUser(formdata) {
+  return axios.post(`${baseUrl}auth/login/`, formdata)
+}

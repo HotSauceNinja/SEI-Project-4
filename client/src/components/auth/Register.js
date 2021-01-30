@@ -1,10 +1,11 @@
 import React from 'react'
 import { registerUser } from '../lib/api'
 import { useHistory } from 'react-router-dom'
+import useForm from '../../utils/useForm'
 
 function Register(){
 
-  const [formdata, setFormdata] = React.useState({
+  const { formdata, handleChange } = useForm({
     firstName: '',
     lastName: '',
     email: '',
@@ -15,11 +16,6 @@ function Register(){
   })
 
   const history = useHistory()
-  console.log(history)
-
-  const handleChange = event => {
-    setFormdata({ ... formdata, [event.target.name]: event.target.value })
-  }
 
   const handleSubmit = async event => {
     event.preventDefault()
