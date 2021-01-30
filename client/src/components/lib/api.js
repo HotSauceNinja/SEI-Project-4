@@ -1,6 +1,13 @@
 import axios from 'axios'
+import { getToken } from './auth'
 
 const baseUrl = '/api/'
+
+function headers() {
+  return {
+    headers: { Authorization: `Bearer ${getToken()}` }
+  }
+}
 
 // REQUESTS
 // * Cinema Requests
@@ -15,6 +22,10 @@ export function getAllFilms() {
 
 export function getSingleFilm(id) {
   return axios.get(`${baseUrl}films/${id}/`)
+}
+
+export function createFilm(formdata) {
+  return axios.post(`${baseUrl}films/`, formdata, headers())
 }
 
 // * Auth Requests

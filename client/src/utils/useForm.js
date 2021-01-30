@@ -1,16 +1,22 @@
 import React from 'react'
 
 function useForm(initialState) {
-
-  const [formdata, setFormData] = React.useState(initialState)
+  const [formdata, setFormdata] = React.useState(initialState)
+  const [errors, setErrors] = React.useState(initialState)
 
   const handleChange = event => {
-    setFormData({ ... formdata, [event.target.name]: event.target.value })
+    const nextState = { ...formdata, [event.target.name]: event.target.value }
+    const nextErrorState = { ...errors, [event.target.name]: '' }
+    setFormdata(nextState)
+    setErrors(nextErrorState)
   }
 
   return {
     formdata,
-    handleChange
+    errors,
+    handleChange,
+    setErrors,
+    setFormdata
   }
 }
 
