@@ -1,13 +1,17 @@
 import React from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import { getSingleFilm } from '../lib/api'
+import { deleteFilm, getSingleFilm } from '../lib/api'
+import { isOwner } from '../lib/auth'
 
 function FilmShow() {
+  const history = useHistory()
 
   const [film, setFilm] = React.useState(null)
   const [hasErr, setHasErr] = React.useState(false)
   const { id } = useParams()
 
+  // * Get a film
   React.useEffect(() => {
     const getData = async () => {
       try {
@@ -19,10 +23,21 @@ function FilmShow() {
       }
     }
     getData()
+    // keep track of film id, if it changes request a new film
   }, [id])
 
-  console.log('film is ', film)
-  console.log(hasErr)
+  
+  // * Handle film delete
+  const handleDelete = async () => {
+    try {
+      await deleteFilm(id)
+      history.push('/films/')
+    } catch (err) {
+      console.log(err)
+    }
+  }
+
+  console.log('film data ', film)
 
   return (
     <div className="container">
@@ -82,6 +97,18 @@ function FilmShow() {
                   }
                 </div>
                 <br />
+                { isOwner(film.creator.id) &&
+          <div className="field is-grouped is-right">
+            <p className="control">
+              <button className="button is-success">
+                <Link to={`/films/${id}/edit/`}> Edit Film </Link>
+              </button>
+            </p>
+            <p className="control">
+              <button className="button is-danger" onClick={handleDelete}> Delete Film </button>
+            </p>
+          </div>
+                }
               </div>
             </div>
           </div>

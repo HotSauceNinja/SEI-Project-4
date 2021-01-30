@@ -28,6 +28,11 @@ export function createFilm(formdata) {
   return axios.post(`${baseUrl}films/`, formdata, headers())
 }
 
+export function deleteFilm(id) {
+  return axios.delete(`${baseUrl}films/${id}`, headers())
+}
+
+
 // * Auth Requests
 export function registerUser(formdata) {
   return axios.post(`${baseUrl}auth/register/`, formdata)
