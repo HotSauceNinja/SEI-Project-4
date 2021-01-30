@@ -1,6 +1,7 @@
 import React from 'react'
 import { getAllFilms } from '../lib/api'
 import FilmCard from '../films/FilmCard'
+import { Link } from 'react-router-dom'
 
 function FilmIndex() {
 
@@ -24,6 +25,14 @@ function FilmIndex() {
     <div className="container">
       <h1 className="title has-text-centered">Films</h1>
       <br />
+
+      <div className="columns title has-text-centered">
+        <span className="column is-one-third">
+          <Link to="/films/new/" className="button">Add new film</Link>
+        </span>
+        <span className="column">Filter films goes here</span>
+      </div>
+
       <div className="container">
         {!films ? 
           <div className="hero is-fullheight title">
