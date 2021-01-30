@@ -88,6 +88,23 @@ function FilmShow() {
 
           <div>
             Screening Slots / map through:
+            { !film.slots ? 
+              <div>Loading</div>
+              :
+              <div>        
+                { film.slots.length ?
+                  <div> 
+                    {film.slots.map(slot => (
+                      <div key={slot.id}> 
+                        {slot.cinema}: {slot.startTime} - {slot.endTime}
+                      </div>
+                    ))}
+                  </div>
+                  :
+                  <div> no length </div>
+                }
+              </div>
+            }
           </div>
         </div>
       }

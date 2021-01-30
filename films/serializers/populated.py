@@ -10,4 +10,3 @@ class PopulatedFilmSerializer(FilmSerializer):
     section = SectionSerializer(many=True)
     # shows the creator of this film:
     creator = NestedUserSerializer()
-

@@ -20,8 +20,6 @@ function FilmIndex() {
     getData()
   }, [])
 
-  console.log('films', films)
-
   return (
     <div className="container">
       <h1 className="title has-text-centered">Films</h1>
