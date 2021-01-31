@@ -23,6 +23,7 @@ function SchedulingSlots(){
 
   console.log('slots are: ', slots)
   console.log('has error: ', hasErr)
+  
   return (
     <div className="container">
       

@@ -32,15 +32,36 @@ function FilmEdit() {
 
   const handleSubmit = async event => {
     event.preventDefault()
+    const filmToEdit = {
+      ...formdata,
+      creator: formdata.creator.id,
+      genre: formdata.genre.map(genre => {
+        if (typeof genre === 'object') { // * we can see if the genre was an object
+          return genre.id // * in which case return its id
+        }
+        return genre // * or it was already a number, so just return it back as is
+      }),
+      section: formdata.section.map(section => {
+        if (typeof section === 'object') { // * we can see if the genre was an object
+          return section.id // * in which case return its id
+        }
+        return section // * or it was already a number, so just return it back as is
+      })
+    }
+
+    console.log('updated film to send', filmToEdit) // * <-- make sure this is right, test all the outcomes
+
     try {
-      await editFilm(id, formdata)
-      console.log('data is', formdata)
-      history.pushState(`/films/${id}/`)
+      const response = await editFilm(id, filmToEdit)
+      console.log(response) // * Important to notice, we're not going to do anything untill we see what happens here, no history redirects etc
+      history.push(`/films/${id}/`)
 
     } catch (err) {
+      console.log(err)
       setErrors(err.response.data)
     }
   }
+
 
   return (
     <section className="section">

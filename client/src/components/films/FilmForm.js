@@ -198,7 +198,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
         {errors && <p className="help is-danger">{errors.plot}</p>}
 
         <div className="field">
-          <button type="submit" className="button">Add film</button>
+          <button type="submit" className="button">Submit</button>
         </div>
 
       </form>
