@@ -29,13 +29,17 @@ export function createFilm(formdata) {
 }
 
 export function editFilm(id, formdata) {
-  return axios.put(`${baseUrl}/films/${id}/`, formdata, headers())
+  return axios.put(`${baseUrl}films/${id}/`, formdata, headers())
 }
 
 export function deleteFilm(id) {
   return axios.delete(`${baseUrl}films/${id}/`, headers())
 }
 
+// * Scheduling Slot Requests
+export function getAllSlots() {
+  return axios.get(`${baseUrl}slots/`)
+}
 
 // * Auth Requests
 export function registerUser(formdata) {

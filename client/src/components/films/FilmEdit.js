@@ -1,12 +1,12 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useParams, useHistory } from 'react-router-dom'
 import { getSingleFilm, editFilm } from '../lib/api'
 import useForm from '../../utils/useForm'
 
 import FilmForm from './FilmForm'
 
 function FilmEdit() {
-
+  const history = useHistory()
   const { id } = useParams()
   const { formdata, errors, setErrors, handleChange, setFormdata } = useForm({
     title: '',
