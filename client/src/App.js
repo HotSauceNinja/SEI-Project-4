@@ -12,6 +12,7 @@ import Register from './components/auth/Register'
 import FilmShow from './components/films/FilmShow'
 import FilmNew from './components/films/FilmNew'
 import FilmEdit from './components/films/FilmEdit'
+import SlotIndex from './components/slots/SlotIndex'
 
 function App() {
   return (
@@ -25,6 +26,7 @@ function App() {
           <Route path="/films/new/" component={FilmNew} />
           <Route path="/films/:id/" component={FilmShow} />
           <Route path="/films/" component={FilmIndex} />
+          <Route path="/slots/" component={SlotIndex} />
           <Route path="/cinemas/" component={CinemaIndex} />
           <Route path="/profile/" component={UserShow} />
           <Route path="/login/" component={Login} />

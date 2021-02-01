@@ -62,7 +62,6 @@ function FilmEdit() {
     }
   }
 
-
   return (
     <section className="section">
       <div className="container">

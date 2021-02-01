@@ -1,17 +1,22 @@
 import React from 'react'
-import { Link, useHistory } from 'react-router-dom'
+import { Link, useHistory, useLocation } from 'react-router-dom'
 import { isAuthenticated, logoutUser } from '../lib/auth'
 
 function Nav(){
-
+  // accesses the history object, which is used to navigate to other routes
   const history = useHistory()
 
+  // checks if user is authenticated (has valid token)
   const isLoggedIn = isAuthenticated()
+
+  // accesses the location object, which contains the current URL location
+  useLocation()
 
   const handleLogout = () => {
     logoutUser()
     history.push('/')
   }
+
 
   return (
     <div className="navbar" role="navigation" aria-label="main navigation">
