@@ -1,32 +1,25 @@
 import React from 'react'
-import { useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
-import { createFilm } from '../lib/api'
-import FilmForm from './FilmForm'
+import { createSlot } from '../lib/api'
+import SlotForm from './SlotForm'
 
-function FilmNew() {
-
-  const history = useHistory()
+function SlotNew() {
 
   const { formdata, handleChange, errors, setErrors  } = useForm({
-    title: '',
-    director: '',
-    yearReleased: '',
-    country: '',
-    runTime: '',
-    poster: '',
-    distributor: '',
-    filmFormat: '',
-    genre: [],
-    section: [],
-    plot: ''
+    cinema: '',
+    startTime: '',
+    endTime: '',
+    film: ''
   })
 
   const handleSubmit = async event => {
     event.preventDefault()
     try {
-      const { data } = await createFilm(formdata)
-      history.push(`/films/${data.id}/`)
+      const { data } = await createSlot(formdata)
+      console.log('slot created', data)
+
+      history.push('/schedule/')
+
     } catch (err) {
       setErrors(err.response.data)
     }
@@ -36,7 +29,7 @@ function FilmNew() {
     <section className="section">
       <div className="container">
         <div className="columns">
-          <FilmForm
+          <SlotForm
             handleChange={handleChange}
             handleSubmit={handleSubmit}
             formdata={formdata}
@@ -48,4 +41,4 @@ function FilmNew() {
   )
 }
 
-export default FilmNew
+export default SlotNew

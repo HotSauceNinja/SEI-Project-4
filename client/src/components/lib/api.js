@@ -41,6 +41,22 @@ export function getAllSlots() {
   return axios.get(`${baseUrl}slots/`)
 }
 
+export function getSingleSlot(id) {
+  return axios.get(`${baseUrl}slots/${id}/`)
+}
+
+export function createSlot(formdata) {
+  return axios.post(`${baseUrl}slots/`, formdata, headers())
+}
+
+export function editSlot(id, formdata) {
+  return axios.put(`${baseUrl}slots/${id}/`, formdata, headers())
+}
+
+export function deleteSlot(id) {
+  return axios.delete(`${baseUrl}slots/${id}/`, headers())
+}
+
 // * Auth Requests
 export function registerUser(formdata) {
   return axios.post(`${baseUrl}auth/register/`, formdata)

@@ -1,34 +1,37 @@
 import React from 'react'
+import { Link, useHistory } from 'react-router-dom'
 import { getAllSlots } from '../lib/api'
+
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
 import 'react-big-calendar/lib/sass/styles.scss'
 
 function SchedulingSlots(){
 
+  const history = useHistory()
   const localizer = momentLocalizer(moment)
   const [slots, setSlots] = React.useState(null)
-  // const [hasErr, setHasErr] = React.useState(false)
+  const [hasErr, setHasErr] = React.useState(false)
 
-  // * Gets the array of scheduling slots objects
+  // * Get the array of scheduling slots objects
   React.useEffect(() => {
     const getData = async () => {
       try {
         const { data } = await getAllSlots()
 
+        // * Sort all slots in chronological order
         const sortedData = data.sort((a, b) => Date.parse(a.startTime) - Date.parse(b.startTime))
-        console.log('sorted data *** ', sortedData)
 
-        setSlots(data)
+        setSlots(sortedData)
       } catch (err) {
-        console.log(err)
+        setHasErr(err)
       }
     }
     getData()
   }, [])
 
-  const events = slots && slots.map(slot => { // * if the slots are null, this will just be false, but will format the events correctly where the slots are here
-
+  // * Format events array of objects for showing on calendar, or do nothing if slots are null
+  const events = slots && slots.map(slot => { 
     return {
       id: slot.id,
       title: !slot.film ? 'Free slot' : slot.film.title,
@@ -39,10 +42,37 @@ function SchedulingSlots(){
     }
   })
 
-  console.log('formatted slots are: ', events)
+  function handleDoubleClick (event) {
+    console.log('event is ', event)
+    history.push(`/slots/${event.id}/edit/`)
+  }
+
   return (
-    <div className="container">
-      {slots ? // * only render the calender if slots exist
+    <div className="container"> 
+      <br />     
+      <div className="columns">
+        <div className="column title has-text-centered">Schedule</div>
+
+        <div className="column buttons is-one-fifth">
+          <button className="button is-success">
+            <Link to={'/slots/new/'}> Add a Slot </Link>
+          </button>
+        </div>
+      </ div>
+
+      {!slots ? // * Only render the calender if slots exist
+        <div className="hero is-fullheight title">
+          { hasErr ?
+            <div className="hero-body">
+              <div className="container has-text-centered">Something went wrong</div>
+            </div> 
+            : 
+            <div className="hero-body">
+              <div className="container has-text-centered">Loading</div>
+            </div>
+          }
+        </div>
+        :
         <Calendar
           localizer={localizer}
           events={events}
@@ -51,9 +81,11 @@ function SchedulingSlots(){
           defaultDate={new Date(2021, 5, 14)}
           defaultView="week"
           style={{ height: '100vh' }}
+          onDoubleClickEvent={handleDoubleClick}
         />
-        : <p>..loading</p>
       }
+
+
     </div>
   )
 }

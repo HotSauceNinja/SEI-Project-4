@@ -13,6 +13,8 @@ import FilmShow from './components/films/FilmShow'
 import FilmNew from './components/films/FilmNew'
 import FilmEdit from './components/films/FilmEdit'
 import SlotIndex from './components/slots/SlotIndex'
+import SlotNew from './components/slots/SlotNew'
+import SlotEdit from './components/slots/SlotEdit'
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
           <Route path="/films/new/" component={FilmNew} />
           <Route path="/films/:id/" component={FilmShow} />
           <Route path="/films/" component={FilmIndex} />
+          <Route path="/slots/:id/edit/" component={SlotEdit} />
+          <Route path="/slots/new/" component={SlotNew} />
           <Route path="/slots/" component={SlotIndex} />
           <Route path="/cinemas/" component={CinemaIndex} />
           <Route path="/profile/" component={UserShow} />

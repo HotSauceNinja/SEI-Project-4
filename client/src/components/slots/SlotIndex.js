@@ -19,10 +19,7 @@ function SlotIndex(){
     getData()
   }, [])
 
-  console.log('slots are: ', slots)
-  console.log('has error: ', hasErr)
-
-  // const cinemaShowingSlots = !slots ? null : console.log('not')
+  // const cinemaShowingSlots = !slots.cinema ? null : console.log('not')
 
   // console.log('Filmhouse: ', cinemaShowingSlots)
 
@@ -49,9 +46,6 @@ function SlotIndex(){
               <div key={slot.id} className="column">{slot.startTime} - {slot.endTime}
                 <div>
                   {slot.cinema.name}
-                  {/* {slot.cinema.map(cinema => (
-                    <span key={cinema.id}> {cinema.name} </span>
-                  ))}      */}
                 </div> 
               </div>
             ))}
