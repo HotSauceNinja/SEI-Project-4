@@ -1,11 +1,12 @@
 import React from 'react'
+import { useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
 import { createSlot } from '../lib/api'
 import SlotForm from './SlotForm'
 
 function SlotNew() {
-
-  const { formdata, handleChange, errors, setErrors  } = useForm({
+  const history = useHistory()
+  const { formdata, handleChange, errors, setErrors } = useForm({
     cinema: '',
     startTime: '',
     endTime: '',
@@ -21,7 +22,7 @@ function SlotNew() {
       history.push('/schedule/')
 
     } catch (err) {
-      setErrors(err.response.data)
+      setErrors(err.response)
     }
   }
 

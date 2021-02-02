@@ -7,7 +7,7 @@ import { editSlot, getSingleSlot, deleteSlot } from './../lib/api'
 function SlotEdit() {
   const { id } = useParams()
   const history = useHistory()
-  const { formdata, setFormdata, errors, handleChange } = useForm({
+  const { formdata, setFormdata, errors, setErrors, handleChange } = useForm({
     cinema: '',
     startTime: '',
     endTime: '',
@@ -29,6 +29,13 @@ function SlotEdit() {
     const slotToEdit = {
       ...formdata,
       cinema: formdata.cinema.id,
+      film: (formdata.film === null) ? 
+        null 
+        : 
+        (typeof formdata.film !== 'object') ? 
+          formdata.film 
+          : 
+          formdata.film.id,
       scheduledBy: !formdata.scheduledBy ? null : formdata.scheduledBy.id
     }
 
@@ -40,7 +47,7 @@ function SlotEdit() {
       history.push('/schedule/')
 
     } catch (err) {
-      console.log(err)
+      setErrors(err.response.data)
     }
   }
 
@@ -74,4 +81,5 @@ function SlotEdit() {
     </div>
   )
 }
+
 export default SlotEdit

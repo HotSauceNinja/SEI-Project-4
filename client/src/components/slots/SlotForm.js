@@ -32,7 +32,8 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
   })
 
   const handleSelectChange = (selected, name) => {
-    const selectedItem = selected.value
+    const selectedItem = selected ? selected.value : null
+    console.log('selected item is ', selectedItem)
     handleChange({ target: { name, value: selectedItem } })
   }
 
@@ -109,7 +110,7 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
             </div>
 
             <div className="field">
-              <label className="label">Film dropdown options</label>
+              <label className="label">Title dropdown options</label>
               <div className="control">
                 <Select
                   options={filmSelectOptions}
