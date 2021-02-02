@@ -1,8 +1,9 @@
 import React from 'react'
 import { Link, useHistory, useLocation } from 'react-router-dom'
-import { isAuthenticated, logoutUser } from '../lib/auth'
+import { isAuthenticated, logoutUser } from '../../lib/auth'
 
 function Nav(){
+
   // accesses the history object, which is used to navigate to other routes
   const history = useHistory()
 
@@ -17,34 +18,35 @@ function Nav(){
     history.push('/')
   }
 
-
   return (
-    <div className="navbar" role="navigation" aria-label="main navigation">
+    <div className="navbar is-dark" role="navigation" aria-label="main navigation">
       <div className="container">
         <div className="navbar-brand">
-          <Link to="/" className="navbar-item">Home</Link>
+          { !isLoggedIn ?
+            <Link to="/" className="navbar-item has-text-info"><strong>FASTival</strong></Link>
+            :
+            null}
           <Link to="/schedule/" className="navbar-item">Schedule</Link>
           <Link to="/films/" className="navbar-item">Films</Link>   
           <Link to="/cinemas/" className="navbar-item">Cinemas</Link>    
         </div>
       
-        <div className="navbar-menu is-active">
+        <div className="navbar-menu has-background-dark is-active">
           <div className="navbar-end">
-            <div className="navbar-item has-dropdown is-hoverable">
-              <div className="navbar-item">User</div>
+            <div className="navbar-item has-dropdown has-background-dark is-hoverable">
+              <div className="navbar-item has-background-dark has-text-info-light">User</div>
 
               { !isLoggedIn ?
-                <div className="navbar-dropdown is-right">
-                  <Link to="/login/" className="navbar-item">Login</Link>
-                  <Link to="/register/" className="navbar-item">Register</Link>
+                <div className="navbar-dropdown has-background-dark is-right ">
+                  <Link to="/login/" className="navbar-item has-text-info">Login</Link>
+                  <Link to="/register/" className="navbar-item has-text-info">Register</Link>
                 </div>
                 :
-                <div className="navbar-dropdown is-right">
-                  <Link to="/profile/" className="navbar-item is-expanded">Profile</Link>
-                  <button className="navbar-item button is-small is-left is-inverted is-danger" onClick={handleLogout}>Logout</button>
+                <div className="navbar-dropdown has-background-dark is-right">
+                  {/* <Link to={`/auth/${id}/`}  className="navbar-item is-expanded has-text-info">Profile</Link> */}
+                  <button className="navbar-item button is-small is-left is-dark has-text-info" onClick={handleLogout}>Logout</button>
                 </div>
               }
-
             </div>
           </div>
         </div>

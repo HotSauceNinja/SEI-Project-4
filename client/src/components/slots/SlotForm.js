@@ -3,12 +3,11 @@ import React from 'react'
 import Select from 'react-select'
 // import Moment from 'moment'
 
-import { getAllFilms } from '../lib/api'
+import { getAllFilms } from '../../lib/api'
 
 function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
 
   const [films, setFilms] = React.useState(null)
-  // const [hasErr, setHasErr] = React.useState(false)
 
   React.useEffect(() => {
     const getData = async () => {
@@ -37,15 +36,6 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
     handleChange({ target: { name, value: selectedItem } })
   }
 
-
-  // const [startTime, onStartTimeChange] = useState(new Date())
-  // const [endTime, onEndTimeChange] = useState(new Date())
-
-  // console.log('startTime', startTime)
-  // console.log('endTime', endTime)
-
-  // const [startDate, setStartDate] = useState(Moment().format('yyyy-MM-dd hh:mm'))
-
   return (
     <>
       <form className="box column is-three-fifths is-offset-one-fifth" onSubmit={handleSubmit}>
@@ -66,10 +56,10 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
                 </select>
               </div>
             </div>
-            {errors && <p className="help is-danger">{errors.cinema}</p>}
+            {errors.cinema && <p className="help is-danger">{errors.cinema}</p>}
 
             <div className="field">
-              <label className="label">Start Time</label>
+              <label className="label">Start Time (YYYY-MM-DD hh:mm)   </label>
               <div className="control">
                 <input
                   className={`input ${errors.startTime ? 'is-danger' : ''}`}
@@ -78,36 +68,23 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
                   name="startTime"
                   value={formdata.startTime}
                 />
-                {/* <DateTime
-                  value={startDate}
-                  dateFormat="yyyy-MM-dd hh:mm"                 
-                  timeFormat="HH:mm"
-                  closeOnSelect={true}
-                  onChange={date => setStartDate(date)}
-
-
-                /> */}
               </div>
             </div>
-            {errors && <p className="help is-danger">{errors.startTime}</p>}
+            {errors.startTime && <p className="help is-danger">Start Time may not be null or in the past</p>}
 
             <div className="field">
-              <label className="label">End Time</label>
+              <label className="label">End Time (YYYY-MM-DD hh:mm)</label>
               <div className="control">
                 <input
                   className="input"
                   placeholder="End Date and Time"
                   onChange={handleChange}
                   name="endTime"
-                  // value={formdata.endTime}
+                  value={formdata.endTime}
                 />
-                {/* <DateTimePicker
-                  onChange={onEndTimeChange}
-                  value={endTime}
-                  name="endTime"
-                /> */}
               </div>
             </div>
+            {errors.endTime && <p className="help is-danger">{errors.endTime}</p>}
 
             <div className="field">
               <label className="label">Title dropdown options</label>
@@ -115,10 +92,12 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
                 <Select
                   options={filmSelectOptions}
                   onChange={selected => handleSelectChange(selected, 'film')}
-                  placeholder="Select an option or leave slot empty for now"
+                  placeholder="Select a new title or leave as is"
+                  value={formdata.selected}
                 />
               </div>
             </div>
+            {errors.film && <p className="help is-danger">{errors.film}</p>}
 
           </div>
         </div>

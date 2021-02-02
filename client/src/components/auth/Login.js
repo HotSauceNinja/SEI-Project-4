@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
-import { loginUser } from '../lib/api'
-import { setToken } from '../lib/auth'
+import { loginUser } from '../../lib/api'
+import { setToken } from '../../lib/auth'
 import useForm from '../../utils/useForm'
 
 function Login(){
@@ -19,7 +19,7 @@ function Login(){
     try {      
       const { data } = await loginUser(formdata)
       setToken(data.token)
-      history.push('/')
+      history.push('/schedule/')
     } catch (err) {
       setError(true)
     }
@@ -30,13 +30,13 @@ function Login(){
   }
 
   return (
-    <section className="section">
+    <section className="section has-background-dark">
       <div className="container">
         <div className="columns">
-          <form className="box column is-half is-offset-one-quarter" onSubmit={handleSubmit}>
+          <form className="box column is-half is-offset-one-quarter has-background-dark" onSubmit={handleSubmit}>
 
             <div className="field">
-              <label className="label">Email</label>
+              <label className="label has-text-info">Email</label>
               <div className="control">
                 <input
                   className={`input ${error ? 'is-danger' : ''}`}
@@ -50,7 +50,7 @@ function Login(){
             </div>
 
             <div className="field">
-              <label className="label">Password</label>
+              <label className="label has-text-info">Password</label>
               <div className="control">
                 <input
                   type='password'
@@ -64,7 +64,7 @@ function Login(){
             </div>
             {error && <p className="help is-danger">Your username or password are incorrect</p>}
             <div className="field">
-              <button type="submit" className="button">Login</button>
+              <button type="submit" className="button is-info has-text-info-light">Login</button>
             </div>
 
           </form>

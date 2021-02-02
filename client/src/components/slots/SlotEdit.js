@@ -2,7 +2,7 @@ import React from 'react'
 import { useParams, useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
 import SlotForm from './SlotForm'
-import { editSlot, getSingleSlot, deleteSlot } from './../lib/api'
+import { editSlot, getSingleSlot, deleteSlot } from '../../lib/api'
 
 function SlotEdit() {
   const { id } = useParams()
@@ -71,9 +71,9 @@ function SlotEdit() {
       />
       <div className="form">
         <div className="columns">
-          <div className="column is-three-fifths is-offset-one-fifth">
+          <div className="column is-three-fifths is-offset-half">
             <p className="control">
-              <button className="button is-danger is-centered" onClick={handleDelete}> Delete Scheduling Slot </button>
+              <button className="button is-danger" onClick={handleDelete}> Delete Scheduling Slot </button>
             </p>
           </div>
         </div>

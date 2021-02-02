@@ -34,27 +34,19 @@ class Slot(models.Model):
         on_delete=models.SET_NULL
     )
 
-    def save(self, force_insert=False, force_update=False, using=None,
-          update_fields=None):
-        """ before saving the newly created model """
+    # def save(self, force_insert=False, force_update=False, using=None,
+    #       update_fields=None):
+    #     """ before saving the newly created model """
 
-        # check that the start time is in the future
-        if self.start_time <= timezone.now():
-            raise ValidationError('start_time must be greater than current time')
+    #     # if there is not a set end time, make end time two hours from start time
+    #     if not self.end_time:
+    #         self.end_time=self.start_time + timedelta(hours=2)
         
-        # if there is not a set end time, make end time two hours from start time
-        if not self.end_time:
-            self.end_time=self.start_time + timedelta(hours=2)
+    #     # if a film has been allocated the end time will be start time plus film run time
+    #     if self.film:
+    #         self.end_time=self.start_time + self.film.run_time
 
-        # check that the end time is after the start time
-        if not self.end_time > self.start_time:
-            raise ValidationError('end_time must be greater than start_time')
-        
-        # if a film has been allocated the end time will be start time plus film run time
-        if self.film:
-            self.end_time=self.start_time + self.film.run_time
-
-        super().save()
+    #     super().save()
 
     def __str__(self):
         return f"{self.cinema}: {self.film} {self.start_time} - Run Time: {self.end_time - self.start_time}"

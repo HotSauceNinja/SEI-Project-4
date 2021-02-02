@@ -1,10 +1,14 @@
 import React from 'react'
-import { getAllFilms } from '../lib/api'
+import { getAllFilms } from '../../lib/api'
 import FilmCard from '../films/FilmCard'
 import { Link } from 'react-router-dom'
+import { isAuthenticated } from '../../lib/auth'
 
 function FilmIndex() {
 
+  // checks if user is authenticated (has valid token)
+  const isLoggedIn = isAuthenticated()
+    
   const [films, setFilms] = React.useState(null)
   const [hasErr, setHasErr] = React.useState(false)
 
@@ -22,16 +26,21 @@ function FilmIndex() {
   }, [])
 
   return (
-    <div className="container">
-      <h1 className="title has-text-centered">Films</h1>
+    <div className="section has-background-dark">
+      <h1 className="title has-text-centered has-text-info-light">Films</h1>
       <br />
 
-      <div className="columns title has-text-centered">
-        <span className="column is-one-third">
-          <Link to="/films/new/" className="button">Add new film</Link>
-        </span>
-        <span className="column">Filter films goes here</span>
-      </div>
+      { isLoggedIn ?
+        <div className="columns title has-text-centered">
+          <span className="column is-one-third">
+            <Link to="/films/new/" className="button is-link has-text-white">Add new film</Link>
+          </span>
+          <span className="column">Filter films goes here</span>
+        </div>
+        :
+        null
+      }
+
 
       <div className="container">
         {!films ? 

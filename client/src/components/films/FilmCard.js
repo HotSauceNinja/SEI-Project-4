@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 function FilmCard({ id,title, yearReleased, director, poster, country, genre, section }) {
   return (
-    <div className="card">
+    <div className="card has-background-grey-dark">
       <Link to={`/films/${id}`} >
         <div className="container">
 
           <div className="card-header">
-            <div className="card-header-title is-centered">{title} ({yearReleased}) </div>
+            <div className="card-header-title is-centered has-text-info">{title} ({yearReleased}) </div>
           </div>
 
           <div className="columns is-mobile">
@@ -17,7 +17,7 @@ function FilmCard({ id,title, yearReleased, director, poster, country, genre, se
             </figure>
           
             <div className="card-content column">
-              <div className="container mr-3" >
+              <div className="container mr-3 has-text-info-light" >
                 <div>Dir: {director}</div>
                 <p>{country}</p>                
                 <br />

@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllCinemas } from '../lib/api'
+import { getAllCinemas } from '../../lib/api'
 import CinemaCard from './CinemaCard'
 
 function CinemaIndex() {
@@ -23,34 +23,36 @@ function CinemaIndex() {
 
 
   return (
-    <div className="container">
-      <h1 className="title has-text-centered">Cinemas</h1>
-      <br />
+    <section className="has-background-dark">
+      <div className="container has-background-dark">
+        <h1 className="title has-text-centered has-text-info-light">Cinemas</h1>
+        <br />
 
-      <div className="container">
-        {!cinemas ? 
-          <div className="hero is-fullheight title">
-            { hasErr ? 
-              <div className="hero-body">
-                <div className="container has-text-centered">Something went wrong</div>
-              </div> 
-              : 
-              <div className="hero-body">
-                <div className="container has-text-centered">Loading</div>
-              </div>
-            }
-          </div>
-          :
-          <div className="columns is-multiline">
-            {cinemas.map(cinema => (
-              <div key={cinema.id} className="column is-half-tablet is-one-third-desktop">
-                <CinemaCard {...cinema} />
-              </div>
-            ))}
-          </div>
-        }
+        <div className="container">
+          {!cinemas ? 
+            <div className="hero is-fullheight title has-text-info-light">
+              { hasErr ? 
+                <div className="hero-body">
+                  <div className="container has-text-centered has-text-info-light">Something went wrong</div>
+                </div> 
+                : 
+                <div className="hero-body">
+                  <div className="container has-text-centered has-text-info-light">Loading</div>
+                </div>
+              }
+            </div>
+            :
+            <div className="columns is-multiline">
+              {cinemas.map(cinema => (
+                <div key={cinema.id} className="column is-half-tablet is-one-third-desktop ">
+                  <CinemaCard {...cinema} />
+                </div>
+              ))}
+            </div>
+          }
+        </div>
       </div>
-    </div>
+    </section>
   )
 }
 

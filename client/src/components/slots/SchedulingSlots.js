@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
-import { getAllSlots } from '../lib/api'
+import { getAllSlots } from '../../lib/api'
 
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
@@ -48,44 +48,44 @@ function SchedulingSlots(){
   }
 
   return (
-    <div className="container"> 
-      <br />     
-      <div className="columns">
-        <div className="column title has-text-centered">Schedule</div>
+    <div className="section has-background-dark has-text-light">
+      <div className="container"> 
+        <br />     
+        <div className="columns">
+          <div className="column title has-text-centered has-text-info-light">Screening Schedule</div>
 
-        <div className="column buttons is-one-fifth">
-          <button className="button is-success">
-            <Link to={'/slots/new/'}> Add a Slot </Link>
-          </button>
-        </div>
-      </ div>
+          <div className="column buttons is-one-fifth">
+            <button className="button is-link">
+              <Link to={'/slots/new/'} className="has-text-white"> Add Screening Slot </Link>
+            </button>
+          </div>
+        </ div>
 
-      {!slots ? // * Only render the calender if slots exist
-        <div className="hero is-fullheight title">
-          { hasErr ?
-            <div className="hero-body">
-              <div className="container has-text-centered">Something went wrong</div>
-            </div> 
-            : 
-            <div className="hero-body">
-              <div className="container has-text-centered">Loading</div>
-            </div>
-          }
-        </div>
-        :
-        <Calendar
-          localizer={localizer}
-          events={events}
-          startAccessor="start"
-          endAccessor="end"
-          defaultDate={new Date(2021, 5, 14)}
-          defaultView="week"
-          style={{ height: '100vh' }}
-          onDoubleClickEvent={handleDoubleClick}
-        />
-      }
-
-
+        {!slots ? // * Only render the calender if slots exist
+          <div className="hero is-fullheight title">
+            { hasErr ?
+              <div className="hero-body">
+                <div className="container has-text-centered">Something went wrong</div>
+              </div> 
+              : 
+              <div className="hero-body">
+                <div className="container has-text-centered">Loading</div>
+              </div>
+            }
+          </div>
+          :
+          <Calendar
+            localizer={localizer}
+            events={events}
+            startAccessor="start"
+            endAccessor="end"
+            defaultDate={new Date(2021, 5, 14)}
+            defaultView="week"
+            style={{ height: '100vh' }}
+            onDoubleClickEvent={handleDoubleClick}
+          />
+        }
+      </div>
     </div>
   )
 }

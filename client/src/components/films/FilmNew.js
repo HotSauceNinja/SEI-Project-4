@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
-import { createFilm } from '../lib/api'
+import { createFilm } from '../../lib/api'
 import FilmForm from './FilmForm'
 
 function FilmNew() {
@@ -33,8 +33,8 @@ function FilmNew() {
   }
 
   return (
-    <section className="section">
-      <div className="container">
+    <section className="section has-background-dark">
+      <div className="container ">
         <div className="columns">
           <FilmForm
             handleChange={handleChange}

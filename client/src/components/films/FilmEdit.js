@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams, useHistory } from 'react-router-dom'
-import { getSingleFilm, editFilm } from '../lib/api'
+import { getSingleFilm, editFilm } from '../../lib/api'
 import useForm from '../../utils/useForm'
 
 import FilmForm from './FilmForm'
@@ -63,7 +63,7 @@ function FilmEdit() {
   }
 
   return (
-    <section className="section">
+    <section className="section has-background-dark">
       <div className="container">
         <FilmForm
           formdata={formdata}

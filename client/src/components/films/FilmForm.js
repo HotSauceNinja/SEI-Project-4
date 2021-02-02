@@ -34,12 +34,12 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
 
   return (
     <>
-      <form className="box column is-three-fifths is-offset-one-fifth" onSubmit={handleSubmit}>
+      <form className="box column is-three-fifths is-offset-one-fifth has-background-dark" onSubmit={handleSubmit}>
         <div className="columns">
           <div className="column">
 
             <div className="field">
-              <label className="label">Title</label>
+              <label className="label has-text-info">Title</label>
               <div className="control">
                 <input
                   className={`input ${errors.title ? 'is-danger' : ''}`}
@@ -53,7 +53,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
             {errors && <p className="help is-danger">{errors.title}</p>}
 
             <div className="field">
-              <label className="label">Director</label>
+              <label className="label has-text-info">Director</label>
               <div className="control">
                 <input
                   className={`input ${errors.director ? 'is-danger' : ''}`}
@@ -67,7 +67,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
             {errors && <p className="help is-danger">{errors.director}</p>}
 
             <div className="field">
-              <label className="label">Year Released (YYYY)</label>
+              <label className="label has-text-info">Year Released (YYYY)</label>
               <div className="control">
                 <input
                   className={`input ${errors.yearReleased ? 'is-danger' : ''}`}
@@ -82,7 +82,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
             {errors && <p className="help is-danger">{errors.yearReleased}</p>}
 
             <div className="field">
-              <label className="label">Country</label>
+              <label className="label has-text-info">Country</label>
               <div className="control">
                 <input
                   className={`input ${errors.country ? 'is-danger' : ''}`}
@@ -96,7 +96,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
             {errors && <p className="help is-danger">{errors.country}</p>}
 
             <div className="field">
-              <label className="label">Genres</label>
+              <label className="label has-text-info">Genres</label>
               <div className="control" >
                 <Select
                   options={genreSelectOptions}
@@ -112,7 +112,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
           <div className="column">
             <div className="field">
               <div className="field">
-                <label className="label">Run Time (hh:mm:ss)</label>
+                <label className="label has-text-info">Run Time (hh:mm:ss)</label>
                 <div className="control">
                   <input
                     className={`input ${errors.runTime ? 'is-danger' : ''}`}
@@ -126,7 +126,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               {errors && <p className="help is-danger">{errors.runTime}</p>}
 
               <div className="field">
-                <label className="label">Poster URL</label>
+                <label className="label has-text-info">Poster URL</label>
                 <div className="control">
                   <input
                     className={`input ${errors.poster ? 'is-danger' : ''}`}
@@ -140,7 +140,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               {errors && <p className="help is-danger">{errors.poster}</p>}
 
               <div className="field">
-                <label className="label">Distributor</label>
+                <label className="label has-text-info">Distributor</label>
                 <div className="control">
                   <input
                     className={`input ${errors.distributor ? 'is-danger' : ''}`}
@@ -154,7 +154,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               {errors && <p className="help is-danger">{errors.distributor}</p>}
 
               <div className="field">
-                <label className="label">Film Format</label>
+                <label className="label has-text-info">Film Format</label>
                 <div className="select">
                   <select name="filmFormat" onChange={handleChange} value={formdata.filmFormat}>
                     <option value="" disabled></option>
@@ -169,7 +169,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
               {errors && <p className="help is-danger">{errors.filmFormat}</p>}
 
               <div className="field">
-                <label className="label">Section</label>
+                <label className="label has-text-info">Section</label>
                 <div className="control">
                   <Select
                     options={sectionSelectOptions}
@@ -184,7 +184,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
         </div>
 
         <div className="field">
-          <label className="label">Plot</label>
+          <label className="label has-text-info">Plot</label>
           <div className="control">
             <textarea
               className={`textarea ${errors.country ? 'is-danger' : ''}`}
@@ -198,7 +198,7 @@ function FilmForm({ handleChange, handleSubmit, formdata, errors }) {
         {errors && <p className="help is-danger">{errors.plot}</p>}
 
         <div className="field">
-          <button type="submit" className="button">Submit</button>
+          <button type="submit" className="button is-info has-text-info-light">Submit</button>
         </div>
 
       </form>

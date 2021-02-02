@@ -5,7 +5,7 @@ import { FaLinkedin } from 'react-icons/fa'
 
 function Footer() {
   return (
-    <footer className="navbar is-fixed-bottom">
+    <footer className="navbar is-fixed-bottom is-dark">
       <div className="container is-fluid level">
         <div className="level-item has-text-centered">FASTival is a labour of love done as part of the GA Software Engineering Immersive Course. <br />If you want to support me or find out more, follow the links</div>
         <br />

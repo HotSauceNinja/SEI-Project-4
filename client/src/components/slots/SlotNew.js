@@ -1,7 +1,7 @@
 import React from 'react'
 import { useHistory } from 'react-router-dom'
 import useForm from '../../utils/useForm'
-import { createSlot } from '../lib/api'
+import { createSlot } from '../../lib/api'
 import SlotForm from './SlotForm'
 
 function SlotNew() {
@@ -22,9 +22,13 @@ function SlotNew() {
       history.push('/schedule/')
 
     } catch (err) {
-      setErrors(err.response)
+      // console.log(err.response.data)
+      setErrors(err.response.data)
+
     }
   }
+  console.log('errors are', errors)
+
 
   return (
     <section className="section">

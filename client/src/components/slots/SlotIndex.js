@@ -1,5 +1,5 @@
 import React from 'react'
-import { getAllSlots } from '../lib/api'
+import { getAllSlots } from '../../lib/api'
 
 function SlotIndex(){
   const [slots, setSlots] = React.useState(null)

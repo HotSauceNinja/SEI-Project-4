@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
-import { deleteFilm, getSingleFilm } from '../lib/api'
-import { isOwner } from '../lib/auth'
+import { deleteFilm, getSingleFilm } from '../../lib/api'
+import { isOwner } from '../../lib/auth'
 
 function FilmShow() {
   const history = useHistory()
@@ -40,28 +40,28 @@ function FilmShow() {
   console.log('film data ', film)
 
   return (
-    <div className="container">
+    <div className="section has-background-dark">
       {!film ? 
-        <div className="title">
+        <div className="title has-text-info-light">
           { hasErr ? 
             <div>
-              <div className="container has-text-centered">Something went wrong</div>
+              <div className="container has-text-centered has-text-info-light">Something went wrong</div>
             </div> 
             : 
             <div>
-              <div className="container has-text-centered">Loading</div>
+              <div className="container has-text-centered has-text-info-light">Loading</div>
             </div>
           }
         </div>
         :
         <div>
-          <h1 className="title has-text-centered">{film.title} ({film.yearReleased})</h1>
+          <h1 className="title has-text-centered has-text-info">{film.title} ({film.yearReleased})</h1>
           <div className="columns">
             <div className="column is-one-third">
               <img src={film.poster} alt={film.title} className="image" />              
             </div>
 
-            <div className="card-content">
+            <div className="card-content has-text-info-light">
               <div className="container mr-3" >
                 <div>Dir: {film.director}</div>                
                 { !film.genre ? 
@@ -100,12 +100,12 @@ function FilmShow() {
                 { isOwner(film.creator.id) &&
                   <div className="field is-grouped is-right">
                     <p className="control">
-                      <button className="button is-success">
+                      <button className="button is-info is-outlined">
                         <Link to={`/films/${id}/edit/`}> Edit Film </Link>
                       </button>
                     </p>
                     <p className="control">
-                      <button className="button is-danger" onClick={handleDelete}> Delete Film </button>
+                      <button className="button is-danger is-outlined" onClick={handleDelete}> Delete Film </button>
                     </p>
                   </div>
                 }
