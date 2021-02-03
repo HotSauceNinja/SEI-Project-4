@@ -5,7 +5,7 @@ import Nav from './components/common/Nav'
 import Home from './components/common/Home'
 import SchedulingSlots from './components/slots/SchedulingSlots'
 import FilmIndex from './components/films/FilmIndex'
-import CinemaIndex from './components/cinemas/CinemaIndex'
+import CinemaHome from './components/cinemas/CinemaHome'
 import UserShow from './components/users/UserShow'
 import Login from './components/auth/Login'
 import Register from './components/auth/Register'
@@ -15,6 +15,7 @@ import FilmEdit from './components/films/FilmEdit'
 import SlotIndex from './components/slots/SlotIndex'
 import SlotNew from './components/slots/SlotNew'
 import SlotEdit from './components/slots/SlotEdit'
+import CinemaShow from './components/cinemas/CinemaShow'
 
 function App() {
   return (
@@ -31,7 +32,8 @@ function App() {
           <Route path="/slots/:id/edit/" component={SlotEdit} />
           <Route path="/slots/new/" component={SlotNew} />
           <Route path="/slots/" component={SlotIndex} />
-          <Route path="/cinemas/" component={CinemaIndex} />
+          <Route path="/cinemas/:id/" component={CinemaShow} />
+          <Route path="/cinemas/" component={CinemaHome} />
           <Route path="/profile/" component={UserShow} />
           <Route path="/login/" component={Login} />
           <Route path="/register/" component={Register} />

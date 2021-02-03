@@ -113,8 +113,8 @@ function FilmShow() {
             </div>
           </div>
 
-          <div>
-            Screening Slots / map through:
+          <div className="has-text-info">
+            Screening Slots:
             { !film.slots ? 
               <div>Loading</div>
               :
@@ -122,13 +122,15 @@ function FilmShow() {
                 { film.slots.length ?
                   <div> 
                     {film.slots.map(slot => (
-                      <div key={slot.id}> 
-                        {slot.cinema}: {slot.startTime} - {slot.endTime}
+                      <div key={slot.id} > 
+                        <div className="has-text-white">
+                          {slot.cinema}: {slot.startTime} - {slot.endTime}
+                        </div>
                       </div>
                     ))}
                   </div>
                   :
-                  <div> no length </div>
+                  <div> The film has not been assigned any slots yet </div>
                 }
               </div>
             }

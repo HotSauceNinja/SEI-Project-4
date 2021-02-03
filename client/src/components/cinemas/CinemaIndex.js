@@ -1,6 +1,6 @@
 import React from 'react'
 import { getAllCinemas } from '../../lib/api'
-import CinemaCard from './CinemaCard'
+import { Link } from 'react-router-dom'
 
 function CinemaIndex() {
 
@@ -25,8 +25,6 @@ function CinemaIndex() {
   return (
     <section className="has-background-dark">
       <div className="container has-background-dark">
-        <h1 className="title has-text-centered has-text-info-light">Cinemas</h1>
-        <br />
 
         <div className="container">
           {!cinemas ? 
@@ -44,8 +42,21 @@ function CinemaIndex() {
             :
             <div className="columns is-multiline">
               {cinemas.map(cinema => (
-                <div key={cinema.id} className="column is-half-tablet is-one-third-desktop ">
-                  <CinemaCard {...cinema} />
+                <div key={cinema.id} className="column is-full">
+                  <div className="card has-background-grey-dark">
+                    <Link to={`/cinemas/${cinema.id}/`}>
+                      <div className="container">
+                        <div className="card-header">
+                          <div className="card-header-title is-centered has-text-info">{cinema.name}</div>
+                        </div>
+
+                        <div className="card-content has-text-info-light">
+                          <div>{cinema.address}</div>
+                          <div><strong>{cinema.phoneNumber}</strong></div>
+                        </div>
+                      </div>        
+                    </Link>
+                  </div>
                 </div>
               ))}
             </div>

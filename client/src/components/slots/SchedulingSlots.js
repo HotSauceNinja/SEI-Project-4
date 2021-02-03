@@ -55,7 +55,7 @@ function SchedulingSlots(){
           <div className="column title has-text-centered has-text-info-light">Screening Schedule</div>
 
           <div className="column buttons is-one-fifth">
-            <button className="button is-link">
+            <button className="button is-info">
               <Link to={'/slots/new/'} className="has-text-white"> Add Screening Slot </Link>
             </button>
           </div>
@@ -75,6 +75,7 @@ function SchedulingSlots(){
           </div>
           :
           <Calendar
+            popup
             localizer={localizer}
             events={events}
             startAccessor="start"
