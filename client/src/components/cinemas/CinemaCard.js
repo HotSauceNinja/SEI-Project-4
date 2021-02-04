@@ -63,11 +63,12 @@ function CinemaCard({ id, name, image, address, phoneNumber, contactName, slots,
                   {slots.map(slot => (
                     <div key={slot.id}>
                       {slot.startTime} to {slot.endTime}: &nbsp;&nbsp; { slot.film ? 
-                        <span><strong>{slot.film}</strong></span>
+                        <span>
+                          <strong>{slot.film}</strong></span>
                         :
                         <span><strong>No film assigned yet</strong></span>}
                     </div>
-                  ))}
+                  ))} 
                 </div>
               }
             </div>
