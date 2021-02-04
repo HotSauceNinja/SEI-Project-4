@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.574dd568.chunk.css",
+    "main.js": "/static/js/main.90415578.chunk.js",
+    "main.js.map": "/static/js/main.90415578.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c012fedc.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c012fedc.js.map",
+    "static/css/2.f3e13d01.chunk.css": "/static/css/2.f3e13d01.chunk.css",
+    "static/js/2.a30b35f8.chunk.js": "/static/js/2.a30b35f8.chunk.js",
+    "static/js/2.a30b35f8.chunk.js.map": "/static/js/2.a30b35f8.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/2.f3e13d01.chunk.css.map": "/static/css/2.f3e13d01.chunk.css.map",
+    "static/css/main.574dd568.chunk.css.map": "/static/css/main.574dd568.chunk.css.map",
+    "static/js/2.a30b35f8.chunk.js.LICENSE.txt": "/static/js/2.a30b35f8.chunk.js.LICENSE.txt",
+    "static/media/cinemasBlue.63ba93c9.png": "/static/media/cinemasBlue.63ba93c9.png",
+    "static/media/theatre02.0496c237.jpg": "/static/media/theatre02.0496c237.jpg",
+    "static/media/theatrebw.ba413359.jpg": "/static/media/theatrebw.ba413359.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c012fedc.js",
+    "static/css/2.f3e13d01.chunk.css",
+    "static/js/2.a30b35f8.chunk.js",
+    "static/css/main.574dd568.chunk.css",
+    "static/js/main.90415578.chunk.js"
+  ]
+}

@@ -50,7 +50,7 @@ function CinemaCard({ id, name, image, address, phoneNumber, contactName, slots,
                   >📍</Marker>
 
                 </ReactMapGL>
-                <p className="has-text-white">{latitude} {longitude}</p>
+
               </div>
             </div>
 

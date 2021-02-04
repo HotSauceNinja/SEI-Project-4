@@ -1,5 +1,4 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
 import { AiOutlineGithub, AiOutlineTwitter } from 'react-icons/ai'
 import { FaLinkedin } from 'react-icons/fa'
 
@@ -11,11 +10,11 @@ function Footer() {
         <br />
         
         <div className="is-menu level-item">
-          <Link to="https://github.com/HotSauceNinja"><AiOutlineGithub className="icon is-medium mx-2"/></Link> 
+          <a href="https://github.com/HotSauceNinja" target="_blank" rel="noreferrer"><AiOutlineGithub className="icon is-medium mx-2"/></a> 
 
-          <Link to="https://www.linkedin.com/in/sandraspighel/"><FaLinkedin className="icon is-medium mx-2"/></Link>     
+          <a href="https://www.linkedin.com/in/sandraspighel/" target="_blank" rel="noreferrer"><FaLinkedin className="icon is-medium mx-2"/></a>     
 
-          <Link to="https://twitter.com/H0tSauceNinja" ><AiOutlineTwitter className="icon is-medium mx-2"/></Link>
+          <a href="https://twitter.com/H0tSauceNinja" target="_blank" rel="noreferrer"><AiOutlineTwitter className="icon is-medium mx-2"/></a>
 
         </div>
         <br/>
@@ -23,7 +22,5 @@ function Footer() {
     </footer>
   )
 }
-
-
 
 export default Footer
