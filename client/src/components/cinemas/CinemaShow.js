@@ -25,7 +25,7 @@ function CinemaShow() {
     getData()
   }, [id])
 
-  console.log(cinema)
+  // console.log(cinema)
 
   return (
     <div className="section has-background-dark">

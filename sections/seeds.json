@@ -3,7 +3,7 @@
   "model": "sections.section",
   "pk": 1,
   "fields": {
-    "name": "galas",
+    "name": "Galas",
     "description": "Glamorous red carpet screenings of hot feature film premieres",
     "certification": "18+"
   }
@@ -12,7 +12,7 @@
   "model": "sections.section",
   "pk": 2,
   "fields": {
-    "name": "upAndComing",
+    "name": "Up and Coming",
     "description": "New director wonders from around the globe. A section reaching across genres and borders to bring you the best new indie films",
     "certification": "15+"
   }
@@ -21,7 +21,7 @@
   "model": "sections.section",
   "pk": 3,
   "fields": {
-    "name": "focusCountry",
+    "name": "Focus Country",
     "description": "Strand showcasing the best films from this edition's country of focus",
     "certification": "PG"
   }
@@ -30,7 +30,7 @@
   "model": "sections.section",
   "pk": 4,
   "fields": {
-    "name": "familyTime",
+    "name": "Family Time",
     "description": "Fun-packed films for the little and big ones. Rediscover the wonder of classical animations and be amazed by our selection of new features",
     "certification": "U"
   }
@@ -39,7 +39,7 @@
   "model": "sections.section",
   "pk": 5,
   "fields": {
-    "name": "lateNightThrills",
+    "name": "Late Night Thrills",
     "description": "Be prepared to be scared! Late night thrillers and horrors for the fearless thrill-seekers",
     "certification": "18+"
   }
@@ -48,7 +48,7 @@
   "model": "sections.section",
   "pk": 6,
   "fields": {
-    "name": "immersivePopUps",
+    "name": "Immersive Pop Ups",
     "description": "Celebrate new and classic films by immersing yourself in them fully with themed screenings. Movie-inspired cocktails and snacks, curated playlist and a fun after party!",
     "certification": "PG"
   }

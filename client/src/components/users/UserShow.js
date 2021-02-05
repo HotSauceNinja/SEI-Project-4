@@ -11,8 +11,8 @@ function UserShow() {
   React.useEffect(() => {
     const getData = async () => {
       try {
-        const { data } = await getSingleUser(id)
-        console.log('user data:', data )
+        await getSingleUser(id)
+        // console.log('user data:', data )
       } catch (err) {
         console.log(err)
       }

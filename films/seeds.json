@@ -36,7 +36,7 @@
     "plot": "Natives of a small isolated town defend themselves against strange underground creatures which are killing them one by one.",
     "poster": "https://m.media-amazon.com/images/M/MV5BMTEzNjkwMzIyMjZeQTJeQWpwZ15BbWU4MDI2NTU5ODYx._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Universal Pictures",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T12:50:43.356Z",
     "creator": 1,
     "genre": [
@@ -60,13 +60,13 @@
     "plot": "After landing the gig of a lifetime, a New York jazz pianist suddenly finds himself trapped in a strange land between Earth and the afterlife.",
     "poster": "https://m.media-amazon.com/images/M/MV5BZGE1MDg5M2MtNTkyZS00MTY5LTg1YzUtZTlhZmM1Y2EwNmFmXkEyXkFqcGdeQXVyNjA3OTI0MDc@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Disney",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T12:53:20.956Z",
     "creator": 1,
     "genre": [
+      9,
       2,
-      5,
-      9
+      5
     ],
     "section": [
       4
@@ -85,7 +85,7 @@
     "plot": "A film that successfully argued that a man was wrongly convicted for murder by a corrupt justice system in Dallas County, Texas.",
     "poster": "https://m.media-amazon.com/images/M/MV5BMTE3MTViMDUtNjkxYy00NWY2LTg5MzEtYjFiNzRkMTgwYTJmXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Miramax Films",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T13:56:08.866Z",
     "creator": 1,
     "genre": [
@@ -109,7 +109,7 @@
     "plot": "Mason Skiles had a great life as a diplomat in Beirut. He and his wife, Nadia, live in a beautiful house and have been mentoring a thirteen year-old Palestinian boy named Karim. The opening scene is a party that the Stiles are hosting for other dignitaries. Karim is helping out serving the guests. When a CIA friend of Mason, Cal, comes to the party he is interested only in taking Karim in for questioning about an older brother Mason doesn't know about. What happens that night changes Mason's life forever, along several others at the party...",
     "poster": "https://m.media-amazon.com/images/M/MV5BZWU5MjMxYmMtYzY2NS00MDU1LWIwMzAtMzIwYjY5NDIxZjZkXkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Kasbah Films",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T21:51:04.136Z",
     "creator": 1,
     "genre": [
@@ -133,7 +133,7 @@
     "plot": "Protagonist Alex DeLarge is an \"ultraviolent\" youth in futuristic Britain. As with all luck, his eventually runs out and he's arrested and convicted of murder. While in prison, Alex learns of an experimental program in which convicts are programmed to detest violence. If he goes through the program, his sentence will be reduced and he will be back on the streets sooner than expected. But Alex's ordeals are far from over once he hits the streets of Britain..",
     "poster": "https://m.media-amazon.com/images/M/MV5BMTY3MjM1Mzc4N15BMl5BanBnXkFtZTgwODM0NzAxMDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Warner Bros.",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T21:54:27.468Z",
     "creator": 1,
     "genre": [
@@ -180,7 +180,7 @@
     "plot": "A man in London tries to help a counter-espionage Agent. But when the Agent is killed, and the man stands accused, he must go on the run to save himself and stop a spy ring which is trying to steal top secret information.",
     "poster": "https://m.media-amazon.com/images/M/MV5BMTY5ODAzMTcwOF5BMl5BanBnXkFtZTcwMzYxNDYyNA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Gaumont",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T22:01:01.519Z",
     "creator": 1,
     "genre": [
@@ -203,14 +203,14 @@
     "plot": "With the help of a smooth talking tomcat, a family of Parisian felines set to inherit a fortune from their owner try to make it back home after a jealous butler kidnaps them and leaves them in the country.",
     "poster": "https://m.media-amazon.com/images/M/MV5BMTU1MzM0MjcxMF5BMl5BanBnXkFtZTgwODQ0MzcxMTE@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Disney",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:03:27.150Z",
     "creator": 1,
     "genre": [
-      5,
-      7,
       9,
-      11
+      11,
+      5,
+      7
     ],
     "section": [
       4
@@ -229,7 +229,7 @@
     "plot": "A day in the lives of two convenience clerks named Dante and Randal as they annoy customers, discuss movies, and play hockey on the store roof.",
     "poster": "https://m.media-amazon.com/images/M/MV5BNzE1Njk0NmItNDhlMC00ZmFlLWI4ZTUtYTY4ZjgzNjkyMTU1XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Miramax",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T22:06:04.918Z",
     "creator": 1,
     "genre": [
@@ -275,7 +275,7 @@
     "plot": "Out of enthusiasm, a Militia soldier abandons his platoon and decides to fight for the cause of the Revolution. His Lieutenant and the rest of the crew look for him during the confused night of 22-23 December 1989.",
     "poster": "https://m.media-amazon.com/images/M/MV5BOTE4Mzk3OTk3MF5BMl5BanBnXkFtZTcwMjQxNTUzMQ@@._V1_UY268_CR4,0,182,268_AL_.jpg",
     "distributor": "Transilvania Film",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:13:25.793Z",
     "creator": 1,
     "genre": [
@@ -299,7 +299,7 @@
     "plot": "Andrei, a 13-year-old teenager living on Bucharest outskirts, decides one day to steal a trolleybus in order to impress Marilena, a prostitute he fell in love with.",
     "poster": "https://m.media-amazon.com/images/M/MV5BZmI2OTg2Y2UtODM4Mi00OWIxLWE3OTMtNmI2MDE4Y2VjZTE5XkEyXkFqcGdeQXVyMTM3OTE2Mzg@._V1_UY268_CR3,0,182,268_AL_.jpg",
     "distributor": "n/a",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:16:38.578Z",
     "creator": 1,
     "genre": [
@@ -323,7 +323,7 @@
     "plot": "In 1999, during the Kosovo War,a train carrying NATO equipment, escorted by American Marines with Captain Doug Jones in command, is held back in Capalnita, a Romanian godforsaken village, by Doiaru, the station master, who blocks the train over a paperwork technicality. For five days the villagers try to take advantage of the Americans' unexpected presence.",
     "poster": "https://m.media-amazon.com/images/M/MV5BMjExMjk5ODAzMF5BMl5BanBnXkFtZTcwNjg2MjU1MQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
     "distributor": "Media Pro Pictures",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:18:41.214Z",
     "creator": 1,
     "genre": [
@@ -346,7 +346,7 @@
     "plot": "Delia, a young Romanian girl, comes to Bucharest with her parents to collect a prize she has won in a contest organized by a soft-drinks company. The prize is a beautiful new car. All Delia has to do now is appear in front of the camera in a commercial. All goes well until it becomes clear that Delia and her parents have very different ideas about what to do with the new car.",
     "poster": "https://m.media-amazon.com/images/M/MV5BZDc1YWE5ZGYtMDNjMi00OWZiLTk2MWMtOGI1MGRmOWEwOWUzXkEyXkFqcGdeQXVyNDkzNTM2ODg@._V1_UY268_CR3,0,182,268_AL_.jpg",
     "distributor": "Romania Film",
-    "film_format": "nonDCPDigital",
+    "film_format": "NON-DCP DIGITAL",
     "submission_date": "2021-01-27T22:22:39.582Z",
     "creator": 1,
     "genre": [
@@ -394,12 +394,318 @@
     "plot": "Chaplin's last 'silent' film, filled with sound effects, was made when everyone else was making talkies. Charlie turns against modern society, the machine age, and progress. The Tramp struggles to live in modern industrial society with the help of a young homeless woman.",
     "poster": "https://m.media-amazon.com/images/M/MV5BYjJiZjMzYzktNjU0NS00OTkxLWEwYzItYzdhYWJjN2QzMTRlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_UX182_CR0,0,182,268_AL_.jpg",
     "distributor": "Charlie Chaplin Productions",
-    "film_format": "70mm",
+    "film_format": "70 mm",
     "submission_date": "2021-01-27T22:28:39.797Z",
     "creator": 1,
     "genre": [
       2,
       5
+    ],
+    "section": [
+      4
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 18,
+  "fields": {
+    "title": "1945",
+    "director": "Ferenc Török",
+    "year_released": 2017,
+    "country": "Hungary",
+    "run_time": "01:31:00",
+    "plot": "12 August 1945, 11 AM. Two mysterious strangers, dressed in black, Jews, appear at the railway station of a Hungarian village. In the shadow of Russian occupation, the people of the village are preparing for the wedding of the son of the town clerk. The bride's former fiance returns from captivity. Within a few hours, everything changes.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BOWZmMWViYjctNTIzNi00YTZhLWE0NGItMmZlMWNjMDBhM2Q0XkEyXkFqcGdeQXVyMjIzMDAwOTc@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Katapult Films",
+    "film_format": "DCP",
+    "submission_date": "2021-01-29T17:12:17.794Z",
+    "creator": 3,
+    "genre": [
+      4
+    ],
+    "section": []
+  }
+},
+{
+  "model": "films.film",
+  "pk": 22,
+  "fields": {
+    "title": "When China Met Africa",
+    "director": "Marc Francis, Nick Francis",
+    "year_released": 2010,
+    "country": "UK",
+    "run_time": "01:15:00",
+    "plot": "When China Met Africa is a 2010 documentary film by Nick Francis and Marc Francis. Set on the front line of Chinaʼs foray into Africa, it follows the lives of a Chinese farmer, a road builder, and the Zambian trade minister.",
+    "poster": "https://duckduckgo.com/i/0702e482.jpg",
+    "distributor": "SpeakIt Films",
+    "film_format": "DCP",
+    "submission_date": "2021-01-30T16:22:20.721Z",
+    "creator": 4,
+    "genre": [
+      3
+    ],
+    "section": [
+      2
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 23,
+  "fields": {
+    "title": "The Queen of Versailles",
+    "director": "Lauren Greenfield",
+    "year_released": 2012,
+    "country": "USA",
+    "run_time": "01:43:00",
+    "plot": "A documentary that follows a billionaire couple as they begin construction on a mansion inspired by Versailles. During the next two years, their empire, fueled by the real estate bubble and cheap money, falters due to the economic crisis.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTM0MzY0NDc3NV5BMl5BanBnXkFtZTcwMTAyODY4Nw@@._V1_UY268_CR2,0,182,268_AL_.jpg",
+    "distributor": "Evergreen Pictures",
+    "film_format": "nonDCPDigital",
+    "submission_date": "2021-01-30T16:27:22.073Z",
+    "creator": 4,
+    "genre": [
+      3,
+      4
+    ],
+    "section": [
+      2
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 25,
+  "fields": {
+    "title": "Brother's Keeper",
+    "director": "Joe Berlinger, Bruce Sinofsky",
+    "year_released": 1992,
+    "country": "USA",
+    "run_time": "01:44:00",
+    "plot": "This documentary by Joe Berlinger and Bruce Sinofsky details the murder trial of Delbert Ward. Delbert's of a family of 4 brothers (the other 3 being Roscoe, Lyman and William - Bill, for short), working as semi-literate farmers, and living together in isolation in a ramshackle shack, until William's death.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTU4ODU1NDQyNl5BMl5BanBnXkFtZTcwOTg3NzUxMQ@@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Netflix",
+    "film_format": "DCP",
+    "submission_date": "2021-01-30T16:34:01.308Z",
+    "creator": 4,
+    "genre": [
+      1,
+      3
+    ],
+    "section": [
+      2
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 26,
+  "fields": {
+    "title": "Joker",
+    "director": "Todd Phillips",
+    "year_released": 2019,
+    "country": "USA",
+    "run_time": "02:02:00",
+    "plot": "Arthur Fleck works as a clown and is an aspiring stand-up comic. He has mental health issues, part of which involves uncontrollable laughter. Times are tough and, due to his issues and occupation, Arthur has an even worse time than most. Over time these issues bear down on him, shaping his actions, making him ultimately take on the persona he is more known as...Joker.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNGVjNWI4ZGUtNzE0MS00YTJmLWE0ZDctN2ZiYTk2YmI3NTYyXkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Warner Bros.",
+    "film_format": "70mm",
+    "submission_date": "2021-01-30T16:40:17.145Z",
+    "creator": 4,
+    "genre": [
+      8,
+      1
+    ],
+    "section": [
+      5,
+      6
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 31,
+  "fields": {
+    "title": "Spirited Away",
+    "director": "Hayao Miyazaki",
+    "year_released": 2001,
+    "country": "Japan",
+    "run_time": "02:05:00",
+    "plot": "During her family's move to the suburbs, a sullen 10-year-old girl wanders into a world ruled by gods, witches, and spirits, and where humans are changed into beasts.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjlmZmI5MDctNDE2YS00YWE0LWE5ZWItZDBhYWQ0NTcxNWRhXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Studio Ghibli",
+    "film_format": "DCP",
+    "submission_date": "2021-01-30T17:14:43.196Z",
+    "creator": 4,
+    "genre": [
+      11
+    ],
+    "section": []
+  }
+},
+{
+  "model": "films.film",
+  "pk": 34,
+  "fields": {
+    "title": "2001: Space Odyssey",
+    "director": "Stanley Kubrick",
+    "year_released": 1968,
+    "country": "UK |  USA",
+    "run_time": "02:29:00",
+    "plot": "After discovering a mysterious artifact buried beneath the Lunar surface, mankind sets off on a quest to find its origins with help from intelligent supercomputer H.A.L. 9000.",
+    "poster": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.shopify.com%2Fs%2Ffiles%2F1%2F1057%2F4964%2Fproducts%2F2001-a-space-odyssey-vintage-movie-poster-original-1-sheet-27x41-8025.jpg%3Fv%3D1535853422&f=1&nofb=1",
+    "distributor": "n/a",
+    "film_format": "70mm",
+    "submission_date": "2021-01-30T17:40:40.366Z",
+    "creator": 4,
+    "genre": [
+      1,
+      10
+    ],
+    "section": []
+  }
+},
+{
+  "model": "films.film",
+  "pk": 35,
+  "fields": {
+    "title": "American Honey",
+    "director": "Andrea Arnold",
+    "year_released": 2016,
+    "country": "UK |  USA",
+    "run_time": "02:43:00",
+    "plot": "A teenage girl with nothing to lose joins a traveling magazine sales crew, and gets caught up in a whirlwind of hard partying, law bending and young love as she criss-crosses the Midwest with a band of misfits.",
+    "poster": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.kritikanstvo.ru%2Fmovies%2Fa%2Famericanhoney%2Fposters%2Famericanhoney_206843.jpg&f=1&nofb=1",
+    "distributor": "n/a",
+    "film_format": "DCP",
+    "submission_date": "2021-01-30T17:45:11.449Z",
+    "creator": 4,
+    "genre": [
+      3,
+      7
+    ],
+    "section": [
+      6
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 37,
+  "fields": {
+    "title": "Evil Dead II",
+    "director": "Sam Raimi",
+    "year_released": 1987,
+    "country": "USA",
+    "run_time": "00:01:27",
+    "plot": "Kick Ass.",
+    "poster": "https://upload.wikimedia.org/wikipedia/en/6/6d/Evil_Dead_II_poster.jpg",
+    "distributor": "n/a",
+    "film_format": "35mm",
+    "submission_date": "2021-01-30T20:35:27.511Z",
+    "creator": 4,
+    "genre": [
+      6
+    ],
+    "section": [
+      5
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 38,
+  "fields": {
+    "title": "This Is Spinal Tap",
+    "director": "Rob Reiner",
+    "year_released": 1984,
+    "country": "USA",
+    "run_time": "01:22:00",
+    "plot": "Spinal Tap, one of England's loudest bands, is chronicled by film director Marty DiBergi on what proves to be a fateful tour.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2MTIzMzg5Nl5BMl5BanBnXkFtZTgwOTc5NDI1MDE@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "n/a",
+    "film_format": "nonDCPDigital",
+    "submission_date": "2021-02-02T17:39:29.463Z",
+    "creator": 4,
+    "genre": [
+      2,
+      3
+    ],
+    "section": [
+      2
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 39,
+  "fields": {
+    "title": "Star Wars: Episode V - The Empire Strikes Back",
+    "director": "Irvin Kershner",
+    "year_released": 1980,
+    "country": "USA",
+    "run_time": "00:00:00",
+    "plot": "After the Rebels are brutally overpowered by the Empire on the ice planet Hoth, Luke Skywalker begins Jedi training with Yoda, while his friends are pursued by Darth Vader and a bounty hunter named Boba Fett all over the galaxy.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BYmU1NDRjNDgtMzhiMi00NjZmLTg5NGItZDNiZjU5NTU4OTE0XkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Disney",
+    "film_format": "35mm",
+    "submission_date": "2021-02-02T19:32:58.442Z",
+    "creator": 20,
+    "genre": [
+      8,
+      10,
+      7
+    ],
+    "section": [
+      4
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 40,
+  "fields": {
+    "title": "Mean Girls",
+    "director": "Mark Waters",
+    "year_released": 2004,
+    "country": "USA",
+    "run_time": "02:00:00",
+    "plot": "This is gthe plot",
+    "poster": "https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_UY268_CR3,0,182,268_AL_.jpg",
+    "distributor": "Disney",
+    "film_format": "nonDCPDigital",
+    "submission_date": "2021-02-03T15:49:38.316Z",
+    "creator": 21,
+    "genre": [
+      2,
+      5,
+      7
+    ],
+    "section": [
+      4
+    ]
+  }
+},
+{
+  "model": "films.film",
+  "pk": 41,
+  "fields": {
+    "title": "Legally Blonde",
+    "director": "Robert Luketic",
+    "year_released": 2001,
+    "country": "USA",
+    "run_time": "01:40:00",
+    "plot": "Elle Woods, a fashionable sorority queen, is dumped by her boyfriend. She decides to follow him to law school. While she is there, she figures out that there is more to her than just looks.",
+    "poster": "https://m.media-amazon.com/images/M/MV5BNTEyNjUwMTkxMV5BMl5BanBnXkFtZTcwNjk0NDk0NA@@._V1_UX182_CR0,0,182,268_AL_.jpg",
+    "distributor": "Universal Pictures",
+    "film_format": "nonDCPDigital",
+    "submission_date": "2021-02-03T16:44:16.129Z",
+    "creator": 22,
+    "genre": [
+      9,
+      2,
+      7
     ],
     "section": [
       4

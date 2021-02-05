@@ -9,7 +9,7 @@
     "longitude": "-3.205360",
     "phone_number": "0131 228 2688",
     "contact_name": "Ally McC",
-    "image": "client/src/components/images/SVG/FILMHOUSE01.svg"
+    "image": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse4.mm.bing.net%2Fth%3Fid%3DOIP.Q8x2VFaHGINAmWq_lQnutwHaFb%26pid%3DApi&f=1"
   }
 },
 {
@@ -43,7 +43,7 @@
   "pk": 4,
   "fields": {
     "name": "VUE Omni",
-    "address": "Omni Centre, 61/11 Leith Street, Edinburgh EH1 3AU",
+    "address": "61/11 Leith Street, Edinburgh EH1 3AU",
     "latitude": "55.954632",
     "longitude": "-3.187100",
     "phone_number": "0871 224 0240",

@@ -3,77 +3,77 @@
   "model": "genres.genre",
   "pk": 1,
   "fields": {
-    "name": "thriller"
+    "name": "Thriller"
   }
 },
 {
   "model": "genres.genre",
   "pk": 2,
   "fields": {
-    "name": "comedy"
+    "name": "Comedy"
   }
 },
 {
   "model": "genres.genre",
   "pk": 3,
   "fields": {
-    "name": "documentary"
+    "name": "Documentary"
   }
 },
 {
   "model": "genres.genre",
   "pk": 4,
   "fields": {
-    "name": "drama"
+    "name": "Drama"
   }
 },
 {
   "model": "genres.genre",
   "pk": 5,
   "fields": {
-    "name": "family"
+    "name": "Family"
   }
 },
 {
   "model": "genres.genre",
   "pk": 6,
   "fields": {
-    "name": "horror"
+    "name": "Horror"
   }
 },
 {
   "model": "genres.genre",
   "pk": 7,
   "fields": {
-    "name": "adventure"
+    "name": "Adventure"
   }
 },
 {
   "model": "genres.genre",
   "pk": 8,
   "fields": {
-    "name": "action"
+    "name": "Action"
   }
 },
 {
   "model": "genres.genre",
   "pk": 9,
   "fields": {
-    "name": "musical"
+    "name": "Musical"
   }
 },
 {
   "model": "genres.genre",
   "pk": 10,
   "fields": {
-    "name": "sciFi"
+    "name": "Sci Fi"
   }
 },
 {
   "model": "genres.genre",
   "pk": 11,
   "fields": {
-    "name": "animation"
+    "name": "Animation"
   }
 }
 ]

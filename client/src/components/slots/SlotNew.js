@@ -16,8 +16,7 @@ function SlotNew() {
   const handleSubmit = async event => {
     event.preventDefault()
     try {
-      const { data } = await createSlot(formdata)
-      console.log('slot created', data)
+      await createSlot(formdata)
 
       history.push('/schedule/')
 
@@ -27,7 +26,7 @@ function SlotNew() {
 
     }
   }
-  console.log('errors are', errors)
+  // console.log('errors are', errors)
 
 
   return (

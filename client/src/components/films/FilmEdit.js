@@ -49,15 +49,15 @@ function FilmEdit() {
       })
     }
 
-    console.log('updated film to send', filmToEdit) // * <-- make sure this is right, test all the outcomes
+    // console.log('updated film to send', filmToEdit)
 
     try {
-      const response = await editFilm(id, filmToEdit)
-      console.log(response) // * Important to notice, we're not going to do anything untill we see what happens here, no history redirects etc
+      await editFilm(id, filmToEdit)
+      // console.log(response)
       history.push(`/films/${id}/`)
 
     } catch (err) {
-      console.log(err)
+      // console.log(err)
       setErrors(err.response.data)
     }
   }

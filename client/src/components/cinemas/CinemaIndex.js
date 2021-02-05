@@ -19,7 +19,7 @@ function CinemaIndex() {
     getData()
   }, [])
 
-  console.log('cinemas', cinemas)
+  // console.log('cinemas', cinemas)
 
 
   return (

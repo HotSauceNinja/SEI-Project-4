@@ -1,11 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import ReactMapGL, { Marker } from 'react-map-gl'
+import { isAuthenticated } from '../../lib/auth'
 
 function CinemaCard({ id, name, image, address, phoneNumber, contactName, slots, latitude, longitude }) {
 
-  console.log('lat ', latitude)
-  console.log('long ', longitude)
+  // checks if user is authenticated (has valid token)
+  const isLoggedIn = isAuthenticated()
 
   return (
     <div className="card has-background-grey-dark">
@@ -63,10 +64,17 @@ function CinemaCard({ id, name, image, address, phoneNumber, contactName, slots,
                   {slots.map(slot => (
                     <div key={slot.id}>
                       {slot.startTime} to {slot.endTime}: &nbsp;&nbsp; { slot.film ? 
-                        <span>
-                          <strong>{slot.film}</strong></span>
+                        <span className="has-text-info">
+                          <Link to={`/films/${slot.film.id}/`}>{slot.film.title}</Link>
+                        </span>
                         :
-                        <span><strong>No film assigned yet</strong></span>}
+                        <span>
+                          {isLoggedIn ?
+                            <Link to={`/slots/${slot.id}/edit/`}>No film assigned yet</Link>
+                            :
+                            <Link to="/login/">No film assigned yet</Link>
+                          }  
+                        </span>}
                     </div>
                   ))} 
                 </div>

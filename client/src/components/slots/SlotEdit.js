@@ -24,7 +24,7 @@ function SlotEdit() {
 
   const handleSubmit = async event => {
     event.preventDefault()
-    console.log('Form data going in handlesubmit is: ', formdata)
+    // console.log('Form data going in handlesubmit is: ', formdata)
 
     const slotToEdit = {
       ...formdata,
@@ -39,7 +39,7 @@ function SlotEdit() {
       scheduledBy: !formdata.scheduledBy ? null : formdata.scheduledBy.id
     }
 
-    console.log('formdata coming out as slot to edit is: ', slotToEdit)
+    // console.log('formdata coming out as slot to edit is: ', slotToEdit)
 
 
     try {

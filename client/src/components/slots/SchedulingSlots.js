@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { getAllSlots } from '../../lib/api'
+import { isAuthenticated } from '../../lib/auth'
 
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
@@ -10,6 +11,9 @@ function SchedulingSlots(){
 
   const history = useHistory()
   const localizer = momentLocalizer(moment)
+  // checks if user is authenticated (has valid token)
+  const isLoggedIn = isAuthenticated()
+
   const [slots, setSlots] = React.useState(null)
   const [hasErr, setHasErr] = React.useState(false)
 
@@ -43,8 +47,10 @@ function SchedulingSlots(){
   })
 
   function handleDoubleClick (event) {
-    console.log('event is ', event)
-    history.push(`/slots/${event.id}/edit/`)
+    isLoggedIn ? 
+      history.push(`/slots/${event.id}/edit/`)
+      :
+      history.push('/login/')
   }
 
   return (
@@ -54,11 +60,15 @@ function SchedulingSlots(){
         <div className="columns">
           <div className="column title has-text-centered has-text-info-light">Screening Schedule</div>
 
-          <div className="column buttons is-one-fifth">
-            <button className="button is-info">
-              <Link to={'/slots/new/'} className="has-text-white"> Add Screening Slot </Link>
-            </button>
-          </div>
+          {isLoggedIn ?
+            <div className="column buttons is-one-fifth">
+              <button className="button is-info">
+                <Link to={'/slots/new/'} className="has-text-white"> Add Screening Slot </Link>
+              </button>
+            </div>
+            :
+            null
+          }
         </ div>
 
         {!slots ? // * Only render the calender if slots exist

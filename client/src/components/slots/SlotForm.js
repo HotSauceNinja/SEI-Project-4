@@ -32,7 +32,7 @@ function SlotForm({ handleChange, handleSubmit, formdata, errors }) {
 
   const handleSelectChange = (selected, name) => {
     const selectedItem = selected ? selected.value : null
-    console.log('selected item is ', selectedItem)
+    // console.log('selected item is ', selectedItem)
     handleChange({ target: { name, value: selectedItem } })
   }
 

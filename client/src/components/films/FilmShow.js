@@ -2,10 +2,13 @@ import React from 'react'
 import { Link, useHistory } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { deleteFilm, getSingleFilm } from '../../lib/api'
-import { isOwner } from '../../lib/auth'
+import { isOwner, isAuthenticated } from '../../lib/auth'
 
 function FilmShow() {
   const history = useHistory()
+
+  // checks if user is authenticated (has valid token)
+  const isLoggedIn = isAuthenticated()
 
   const [film, setFilm] = React.useState(null)
   const [hasErr, setHasErr] = React.useState(false)
@@ -34,10 +37,11 @@ function FilmShow() {
       history.push('/films/')
     } catch (err) {
       console.log(err)
+      // setHasErr(err)
     }
   }
 
-  console.log('film data ', film)
+  // console.log('film data ', film)
 
   return (
     <div className="section has-background-dark">
@@ -130,7 +134,13 @@ function FilmShow() {
                     ))}
                   </div>
                   :
-                  <div> The film has not been assigned any slots yet </div>
+                  <div> 
+                    {isLoggedIn ?
+                      <Link to={'/slots/new/'}>Click here to create a screening slot</Link>
+                      :
+                      <Link to="/login/" className="has-text-white">Click here to create a screening slot</Link>
+                    }
+                  </div>
                 }
               </div>
             }
