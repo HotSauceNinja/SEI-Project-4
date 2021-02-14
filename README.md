@@ -633,8 +633,7 @@ More in depth information is available via the [extended README documentation](h
 ## Challenges
 * The most challenging part of this project was related to forms. I have detailed my issues and the resolving process [here](#forms), and what I take away from this is the fact that I have a stronger understanding of both the submitting a form process, and working with different types of data structures. 
 * When editing a film made previously, the genre and section would not be displayed in the respective fields. They could still be changed, and if they were left as they were they woudl just retain the previous values. 
-* Hosting the website on Heroku was free, but it comes with the inconvenience that it loads very slowly, which gives users the impression it is not functional. Further there were times when the app was unavailable.
-* Because of the fast paced development of this project, I did not use as many comments to explain my code as I had previously done in projects 1 to 3.
+* Hosting the website on Heroku was free, but it comes with the inconvenience that it loads very slowly, which gives users the impression it is not functional. My data takes a long time to appear, which cripples the user exeprience, and there were also times when I was not able to use the website at all because the server was unavailable.
 
 ## Possible future features
 * Writing a new Calendar component that can be shaped to better contain the schedule. The current implementation ( React Big Calendar ) works to illustrate the purpose of this app, but is very limited in usability and functionality. 
