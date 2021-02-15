@@ -1,6 +1,8 @@
 # SEI-Project-4: FASTival
 by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/) - [HotSauceNinja](https://github.com/HotSauceNinja)
 
+![home](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Home_page.gif?raw=true)
+
 👉 [<b>TRY ME</b>](https://fastival.herokuapp.com/) 👈
 # Table of Contents
 
@@ -31,7 +33,7 @@ In Film Festivals, scheduling is a lengthy process where huge wooden boards and 
 
 FASTival was created with the intention to optimise this process by making it fully digital, and hence much friendlier for the environment.
 
-This is the fourth (and last) project in the General Assembly Software Engineering Immersive course. Working solo, I had 8 days to develop a full stack application: back end with a Python Django API using Django REST Framework to serve data from a Postgres database, and a separate front-end built with React. 
+This is the fourth (and last) project in the General Assembly Software Engineering Immersive course. Working solo, I had 8 days to develop a full stack application: back end with a Python Django API using Django REST Framework to serve data from a Postgres database, and a separate front end built with React. 
 
 ## Technology Used
 ### Languages Used
@@ -73,13 +75,13 @@ This is the fourth (and last) project in the General Assembly Software Engineeri
 ### Prerequisites
 
 The website is mobile friendly and the user can access it through the browser. 
-#### User experience
+#### User journey
 
-Non-logged in staff can easily consult the scheduling updates at a glance by accessing the film list and screening schedule without needing to log in. 
+Non-logged in staff can easily consult the scheduling updates at a glance by accessing the film list and the screening schedule without needing to log in. 
 
 ![home page](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Home_page.gif?raw=true)
 
-However, only logged in staff can make changes to the database and the schedule:
+However, only logged in staff can make changes to the database and the schedule. Here is the process of registering a user:
 
 ![register user](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/register_user.gif?raw=true)
 
@@ -87,7 +89,7 @@ Logged in users can create screening slots representing contracted venue hires i
 
 ![schedule views](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/schedule_views.gif?raw=true)
 
-Users can create films and allocate films to slots:
+Users can create films and allocate them to slots:
 
 ![Add film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Add_film.gif?raw=true)
 
@@ -147,7 +149,7 @@ admin.site.register(User)
 ```
 
 And tested everything works fine by running the server with <code>pythong manage.py runserver</code> and visiting the admin app `localhost:8000/admin`. 
-I should be able to log in with my super user, but I had not created this when I set up the project, I can easily do so now by typing the following command in Terminal: <code>python manage.py createsuperuser</code> and filling the options required.
+I should be able to log in with my super user, but had I not created this when I set up the project, I can easily do so now by typing the following command in Terminal: <code>python manage.py createsuperuser</code> and filling the options required.
 
 ![log in to CMS](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/django_admin.png?raw=true)
 ### Authentication
@@ -340,9 +342,9 @@ class GenreListView(APIView):
 ### Seeding
 I did the majority of seeding in the evenings, after wrapping with that day's work. I followed the same process for all my models and uploaded all the information via the localhost admin site. Once I had enough data, I would have Django create a seeds file automatically from the data that already existed in the table: <code>python manage.py dumpdata app-name --output app-name/seeds.json --indent=2</code>
 and then flushed the database and loaded the data from the seeds file back in.
-Below is an example opf seeding data from TablePlus:
+Below is an example of seeding data from TablePlus:
 
-![Table Plus](#link)
+![Table Plus](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Table_Plus.png?raw=true)
 
 ### Front End
 As per the project requirements, I used React for the front end. Mounting the front end was straight forward, and having already done this previously for [Project 3 (DEVERR)](https://github.com/HotSauceNinja/SEI-Project-3-DEVERR) definitely helped get through it faster. 
@@ -356,11 +358,11 @@ The steps I followed were overall similar:
 * Creating a format scaffolding in each component using JSX and Bulma classes
 * Writing the requests one at a time (getting data through async functions with try / catch blocks in place, and setting into State)
 * Testing everything as I went along:
-  * First in Insomnia to make sure the request to my back end was working accurately and check nthe format the data is sent in
+  * First in Insomnia to make sure the request to my back end was working accurately and check the format the data is sent in
   * Then in my console through logging the data at each step
   * And last ensuring it shows on the page itself
 * I would then refactor my code to break it into smaller components that I could import in the main one or reuse if required
-* I then later added error handling (through using State) and updated the try / catch block to set the errors.
+* I later added error handling (through using State) and updated the try / catch block to set the errors.
 * For the components which required redirecting, I used History from react-router-dom to push a new url into the history array, and Location to refresh the page.
 
 As an example of how I structured the components, the film folder was composed of:
@@ -376,7 +378,7 @@ Here is a photo with my folder structure, I followed the same process described 
 ![Folder Structure](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/folder_structure.png?raw=true)
 
 ### Registering a User
-Following similar steps for Registration until the point where I submitted the new user form, I then took a different path for Login.
+Followed similar steps as above for Registration until the point where I submitted the new user form, from where I took a different path for Login.
 In my lib folder from components, I created a new file, auth.js to handle tokens:
 ```
 // * Set user token
@@ -422,32 +424,45 @@ export function isOwner(userId) {
 }
 ```
 
-These functions then helped me implement authentication and different outcomes based on existance of token and the user itself. For example, my navbar displayed different options depending of status:
+These functions then helped me implement authentication and different outcomes based on existence of a token. For example, my navbar displayed different options depending on login status:
 ```
-              <div className="navbar-item has-background-dark has-text-info-light">User</div>
-              { !isLoggedIn ?
-                <div className="navbar-dropdown has-background-dark is-right ">
-                  <Link to="/login/" className="navbar-item has-text-info">Login</Link>
-                  <Link to="/register/" className="navbar-item has-text-info">Register</Link>
-                </div>
-                :
-                <div className="navbar-dropdown has-background-dark is-right">
-                  {/* <Link to={`/auth/${id}/`}  className="navbar-item is-expanded has-text-info">Profile</Link> */}
-                  <button className="navbar-item button is-small is-left is-dark has-text-info" onClick={handleLogout}>Logout</button>
-                </div>
-              }
+<div className="navbar-item has-background-dark has-text-info-light">
+  User
+</div>
+{ !isLoggedIn ?
+  <div className="navbar-dropdown has-background-dark is-right ">
+    <Link to="/login/" className="navbar-item has-text-info">
+      Login
+    </Link>
+    <Link to="/register/" className="navbar-item has-text-info">
+      Register
+    </Link>
+  </div>
+ :
+  <div className="navbar-dropdown has-background-dark is-right">
+      <button className="navbar-item button is-small is-left is-dark has-text-info"
+      onClick={handleLogout}>
+        Logout
+      </button>
+  </div>
+}
 ```
-I also restricted adding films to authenticated users only, and editing and deleting films to be allowed only to user who created the film:
+I also restricted adding films to authenticated users only, and editing and deleting films to be allowed only to the user who created the film:
 ```
  { isOwner(film.creator.id) &&
           <div className="field is-grouped is-right">
             <p className="control">
               <button className="button is-success">
-                <Link to={`/films/${id}/edit/`}> Edit Film </Link>
+                <Link to={`/films/${id}/edit/`}>
+                  Edit Film
+                </Link>
               </button>
             </p>
             <p className="control">
-              <button className="button is-danger" onClick={handleDelete}> Delete Film </button>
+              <button className="button is-danger" 
+              onClick={handleDelete}> 
+                Delete Film
+              </button>
             </p>
           </div>
   }
@@ -475,14 +490,19 @@ const genreSelectOptions = [
 A const to handle multi selection change:
 ```
   const handleMultiSelectionChange = (selected, name) => {
-    const selectedOption = selected ? selected.map(item => item.value) : []
+    const selectedOption = selected ? 
+      selected.map(item => item.value) 
+      : 
+      []
     handleChange({ target: { name, value: selectedOption } })
   }
 ```
 And included both in my returned JSX:
 ```
             <div className="field">
-              <label className="label has-text-info">Genres</label>
+              <label className="label has-text-info">
+                Genres
+              </label>
               <div className="control" >
                 <Select
                   options={genreSelectOptions}
@@ -505,17 +525,22 @@ The solution meant finding a way to reformat the data before sending it into han
      ...formdata,
      creator: formdata.creator.id,
      genre: formdata.genre.map(genre => {
-       if (typeof genre === 'object') { // * we can see if the genre was an object
-         return genre.id // * in which case return its id
+       if (typeof genre === 'object') { 
+         // * we can see if the genre was an object
+         return genre.id 
+         // * in which case return its id
        }
-       return genre // * or it was already a number, so just return it back as is
+       return genre 
+       // * or it was already a number, so just return it back as is
      })
    }
-   console.log('updated film to send', filmToEdit) // * updated information
+   console.log('updated film to send', filmToEdit) 
+   // * updated information
  
    try {
      const response = await editFilm(id, filmToEdit)
-     console.log(response) // * we are not going to do anything further until we see what happens here
+     console.log(response) 
+     // * checking how this looks
      history.push(`/films/${id}/`)
    } catch (err) {
      setErrors(err.response.data)
@@ -528,7 +553,7 @@ The Scheduling was what I thought of as my most complex component. My plan invol
 ![styled calendar](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/styled_claendar.png?raw=true)
 
 I took the following steps:
-* Imported moment for time localization
+* Imported moment for time localization:
 ```
 import { Calendar, momentLocalizer } from 'react-big-calendar'
 import moment from 'moment'
@@ -537,7 +562,7 @@ function SchedulingSlots(){
   const localizer = momentLocalizer(moment)
 ...
 ```
-* I requested the array of scheduling slot objects, and then sorted them in chronological order
+* I requested the array of scheduling slot objects, and then sorted them in chronological order:
 ```
   // * Get the array of scheduling slots objects
   React.useEffect(() => {
@@ -556,9 +581,10 @@ function SchedulingSlots(){
     getData()
   }, [])
 ```
-* I then formatted the array to have the shape required by the Calendar component so the slots could be recognised and displayed
+* I then formatted the array to have the shape required by the Calendar component so the slots could be recognised and displayed:
 ```
-  // * Format events array of objects for showing on calendar, or do nothing if slots are null
+  // * Format events array of objects for showing on calendar 
+  // * or do nothing if slots are null
   const events = slots && slots.map(slot => { 
     return {
       id: slot.id,
@@ -576,11 +602,15 @@ function SchedulingSlots(){
           <div className="hero is-fullheight title">
             { hasErr ?
               <div className="hero-body">
-                <div className="container has-text-centered">Something went wrong</div>
+                <div className="container has-text-centered">
+                  Something went wrong
+                </div>
               </div> 
               : 
               <div className="hero-body">
-                <div className="container has-text-centered">Loading</div>
+                <div className="container has-text-centered">
+                  Loading
+                </div>
               </div>
             }
           </div>
@@ -598,7 +628,7 @@ function SchedulingSlots(){
           />
         }
 ```
-* Last, I wrote a small function to allow editing a slot by double clicking it
+* Last, I wrote a small function to allow editing a slot by double clicking it:
 ```
   function handleDoubleClick (event) {
     isLoggedIn ? 
@@ -610,12 +640,12 @@ function SchedulingSlots(){
 
 ### Restructuring
 My initial plan included a user page where the user would be directed after a successful login. However, as I reached my MVP later than I had initially planned, I had to decide in between:
-1. Keeping to the initial plan but risking not to have enough time to fully style the website
-2. Cutting the user page out and focusing on styling the website, with the possibility of adding other small improvements once this is in place 
+1. Keeping to the initial plan but risking not to have enough time to fully style the website.
+2. Cutting the user page out and focusing on styling the website, with the possibility of adding other small improvements once this is in place.
 
 I decided to go with the second option, which I still feel was the best choice. 
 
-I used the gained time to find an image for the home page and liaise with a friend to help me add my logo onto it, and to create a second image using a blue tint, which I could then switch to upon mouse over.
+I used the gained time to find an image for the home page and liaise with a friend to help me add my logo onto it, and to create a second image using a blue tint, which I could then switch to when the mouse went over.
 
 I then implemented my colour scheme throughout the website - I decided to go for a dark mode to reduce eye strain, as I expected my users to spend lengthy intervals looking at the Scheduling page when planning the festival. 
 I also opted for blue as it is a colour invoking calm, but also confidence and stabillity. I wanted my website to look professional and clean, and to allow easy navigation by drawing the eyes towards the important elements through use of colour. 
@@ -627,52 +657,59 @@ As I had a few hours left until the project deadline, I decided to restructure m
 
 I refactored my code to allow all cinemas to be displayed on the cinema page, and then enabled showing a detailed version of each when the user selected one:
 
-![Cinemas page](#link-to-cinema-page)
+![Cinemas page](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/cinema_page.png?raw=true)
 
 I then imported my map into the ShowCinema component:
 ```
-              <div className="column is-half map-container">
-                <ReactMapGL
-                  mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
-                  height="100%"
-                  width="100%"
-                  mapStyle="mapbox://styles/mapbox/dark-v10"
-                  latitude= {parseFloat(latitude)}
-                  longitude= {parseFloat(longitude)}
-                  zoom= {14}
-                >
-                  <Marker 
-                    latitude= {parseFloat(latitude)}
-                    longitude= {parseFloat(longitude)}
-                  >📍</Marker>
-
-                </ReactMapGL>
-              </div>
+<div className="column is-half map-container">
+  <ReactMapGL
+    mapboxApiAccessToken={process.env.REACT_APP_MAPBOX_ACCESS_TOKEN}
+    height="100%"
+    width="100%"
+    mapStyle="mapbox://styles/mapbox/dark-v10"
+    latitude= {parseFloat(latitude)}
+    longitude= {parseFloat(longitude)}
+    zoom= {14}
+  >
+    <Marker 
+      latitude= {parseFloat(latitude)}
+      longitude= {parseFloat(longitude)}
+    >
+      📍
+    </Marker>
+  </ReactMapGL>
+</div>
 ```
 
 More in depth information is available via the [extended README documentation](https://docs.google.com/document/d/1d4Fy95T7abMTXSo2sN6QJFxId9cTZP9_UTMGY7qJb94/edit?usp=sharing)
 
 # Final Thoughts and Project Wrap
 ## Wins
-* I managed to pull of a lot of functionality and content in the given timeframe, which I am very happy with. I was told by one of my colleagues that my website looks and feels like an actual platform, which made me very happy.
+* I managed to pull off a lot of functionality and content in the given timeframe, which I am very happy with. I was told by one of my colleagues that my website looks and feels like an actual platform, which made me very happy.
 * I really enjoyed working with Django and went through great lengths to understand, and then exploit my back end knowledge to shape my models into stable elements that can support and enhance my functionality. 
 
-## Challenges
+## Challenges / Bugs
 * The most challenging part of this project was related to forms. I have detailed my issues and the resolving process [here](#forms), and what I take away from this is the fact that I have a stronger understanding of both the submitting a form process, and working with different types of data structures. 
-* When editing a film made previously, the genre and section would not be displayed in the respective fields. They could still be changed, and if they were left as they were they woudl just retain the previous values. 
+* When editing a film made previously, the genre and section would not be displayed in the respective fields. They could still be changed, and if they were left as they were they would just retain the previous values. I am still to find a solution to this issue.
 * Hosting the website on Heroku was free, but it comes with the inconvenience that it loads very slowly, which gives users the impression it is not functional. My data takes a long time to appear, which cripples the user exeprience, and there were also times when I was not able to use the website at all because the server was unavailable.
 
+## Key Learnings
+* I have a stronger understanding of forms and of converting to different types of data structures. 
+* I am more confident with integrating maps into a page.
+* Before starting this project, I was not familiar with the earlier versions of React as we have been working solely with [Hooks](https://reactjs.org/docs/hooks-intro.html) in class. Choosing to work with react-big-calendar meant I had to be able to read class-based React syntax, which was challenging at first, but I think I gained a clearer understanding of it.
+
 ## Possible future features
-* Writing a new Calendar component that can be shaped to better contain the schedule. The current implementation ( React Big Calendar ) works to illustrate the purpose of this app, but is very limited in usability and functionality. 
-Further implementations could include:
+* Writing a new Calendar component that can be shaped to better contain the schedule. The current implementation (React Big Calendar) works to illustrate the purpose of this app, but is very limited in usability and functionality. 
+Further calendar implementations could include:
   * Adding rows for each cinema on the week view
-  * Adding the cinema name and slot suration onto the slot card
+  * Adding the cinema name and slot duration onto the slot card
   * Styling the component to customise colours throughout
-  * Assigining a different colour for free slots to help them stand out
-* Adding a User page and the possibility for users to edit or delete their profile
+  * Assigning a different colour to free slots to make them stand out
+  
+* Adding a User page and the possibility for users to edit or delete their profile.
 * Adding a summary page where users can see statistics like the total number of films, slots, cinemas, sections etc.
-* Adding functionality so that users can edit and add genres and sections
-* Adding types of users with different levels of permission
+* Allowing users to edit or add genres and sections.
+* Adding types of users with different levels of permission.
 ---
 ## Contributing to this project
 If you have suggestions for improving this project, please [open an issue on GitHub](https://github.com/HotSauceNinja/SEI-Project-4)
