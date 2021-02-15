@@ -73,18 +73,36 @@ This is the fourth (and last) project in the General Assembly Software Engineeri
 ### Prerequisites
 
 The website is mobile friendly and the user can access it through the browser. 
-#### Programming Staff
+#### User experience
 
-Logged in users can create screening slots representing contracted venue hires in place, upload film information based on accepted titles, and schedule these across the available slots. 
+Non-logged in staff can easily consult the scheduling updates at a glance by accessing the film list and screening schedule without needing to log in. 
 
-If a slot must be moved, it can be done so easiley by double clicking it and editing the times and/or cinema. 
+![home page](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Home_page.gif?raw=true)
+
+However, only logged in staff can make changes to the database and the schedule:
+
+![register user](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/register_user.gif?raw=true)
+
+Logged in users can create screening slots representing contracted venue hires in place, upload film information based on accepted titles, and schedule these across the available slots. The Screening Schedule can be viewed in multiple formats:
+
+![schedule views](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/schedule_views.gif?raw=true)
+
+Users can create films and allocate them to slots:
+
+![Add film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Add_film.gif?raw=true)
+
+If a slot must be modified, it can be done so easiley by double clicking it and editing the film, times and/or cinema. 
+
+![Change Film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/change_film.gif?raw=true)
 
 If a film is deleted, its scheduling slot is reset to a vacant slot. This can be repopulated once a different title is chosen.
 
-#### Other Staff
-Non-logged in staff can easily consult the scheduling updates at a glance by accessing the film list and screening schedule without needing to log in. 
+![delete film](#link)
 
-However, only logged in staff can make changes to the database and the schedule.
+A user can also view cinemas and the screening slots each hosts:
+
+![cinemas](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Cinemas.gif?raw=true)
+
 
 ---
 # Project Development
@@ -93,7 +111,7 @@ I first set up a Django project and created the FASTival django database.
 
 I then started creating my models, based on the ERD Diagram drafted when pitching the project. 
 
-![ERD Diagram](#link)
+![ERD Diagram](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/ERD.png?raw=true)
 
 ### The User model
 I created a new folder, jwt_auth, and added 'jwt_auth' to my installed apps within the settings.py file in project folder, and linked it to the User model within the same folder:
@@ -132,7 +150,7 @@ admin.site.register(User)
 And tested everything works fine by running the server with <code>pythong manage.py runserver</code> and visiting the admin app `localhost:8000/admin`. 
 I should be able to log in with my super user, but I had not created this when I set up the project, I can easily do so now by typing the following command in Terminal: <code>python manage.py createsuperuser</code> and filling the options required.
 
-![log in to CMS](#link)
+![log in to CMS](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/django_admin.png?raw=true)
 ### Authentication
 Because I needed users to be able to register via the API, I added the Python Json Web Token package:  <code>pipenv install pyjwt</code>
 
@@ -269,6 +287,9 @@ class Film(models.Model):
     def __str__(self):
         return f"{self.title} - {self.director}"
 ```
+And here it is viewed in Insomnia:
+
+![film object](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/film_object.png?raw=true)
 
 ### Implementing relationships
 #### One to Many
@@ -435,7 +456,7 @@ I also restricted adding films to authenticated users only, and editing and dele
 ### Forms
 Getting my forms to fully function was by far the biggest challenge of this project. I will outline below the part which I found the most challenging.
 
-I decided to use [React Select](#link) to allow a user to select more than one genre when creating or editing a film. In implementing this into my FilmForm, I added a genre select option:
+I decided to use [React Select](https://react-select.com/home) to allow a user to select more than one genre when creating or editing a film. In implementing this into my FilmForm, I added a genre select option:
 ```
 const genreSelectOptions = [
   { value: 1, label: 'Thriller' },
@@ -472,7 +493,11 @@ And included both in my returned JSX:
             </div>
             {errors && <p className="help is-danger">{errors.genre}</p>}
 ```
-However, having this select form in place along with a many to many relationship between genres and films meant that my data object was taking a different shape when it arrived in my FilmEdit, so I had to find a way to reformat the data before sending it into handleSubmit, to ensure data is in the format required when sending the request:
+However, having this select form in place along with a many to many relationship between genres and films meant that my data object was taking a different shape when it arrived in my FilmEdit, which generated the following error: 
+
+![console log pk error](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/console_log_pk_error.png?raw=true)
+
+The solution meant finding a way to reformat the data before sending it into handleSubmit, to ensure data is in the format required when sending the request:
 ```
  const handleSubmit = async event => {
    event.preventDefault()
@@ -498,7 +523,9 @@ However, having this select form in place along with a many to many relationship
  }
 ```
 ### Scheduling
-The Scheduling was what I thought of as my most complex component. My plan involved getting all the scheduling slots ( either free or with their linked film), importing the React Big Calendar and then showing all the slots within this.
+The Scheduling was what I thought of as my most complex component. My plan involved getting all the scheduling slots (either free or with their linked film), importing the React Big Calendar and then showing all the slots within this.
+
+![styled calendar](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/styled_claendar.png?raw=true)
 
 I took the following steps:
 * Imported moment for time localization
@@ -647,8 +674,6 @@ Further implementations could include:
 * Adding functionality so that users can edit and add genres and sections
 * Adding types of users with different levels of permission
 ---
-## Contributors
-* [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/)
 ## Contributing to this project
 If you have suggestions for improving this project, please [open an issue on GitHub] (https://github.com/HotSauceNinja/SEI-Project-4)
 ## License & copyright
