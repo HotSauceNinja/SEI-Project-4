@@ -87,22 +87,21 @@ Logged in users can create screening slots representing contracted venue hires i
 
 ![schedule views](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/schedule_views.gif?raw=true)
 
-Users can create films and allocate them to slots:
+Users can create films and allocate films to slots:
 
 ![Add film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Add_film.gif?raw=true)
 
-If a slot must be modified, it can be done so easiley by double clicking it and editing the film, times and/or cinema. 
+If a slot must be modified, it can be done so easily by double clicking it and editing the film, times and/or cinema. 
 
 ![Change Film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/change_film.gif?raw=true)
 
-If a film is deleted, its scheduling slot is reset to a vacant slot. This can be repopulated once a different title is chosen.
+A used can edit or delete films they created. If a film is deleted, its scheduling slot is reset to a vacant slot. This can be left empty or repopulated with a different title:
 
-![delete film](#link)
+![delete film](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/delete_film.gif?raw=true)
 
-A user can also view cinemas and the screening slots each hosts:
+A user can also view cinemas and the screening slots they host:
 
 ![cinemas](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/Cinemas.gif?raw=true)
-
 
 ---
 # Project Development
@@ -293,7 +292,7 @@ And here it is viewed in Insomnia:
 
 ### Implementing relationships
 #### One to Many
-If establishing a one to many relationship, I created in "ONE" / serialisers folder a populated.py file where I established the relationship to the "MANY". As an example, here is my populated.py file for films:
+For establishing the One to Many relationships, I created in "ONE" / serialisers folder a populated.py file where I established the relationship to the "MANY". As an example, here is my populated.py file for films:
 ```
 class PopulatedFilmSerializer(FilmSerializer):
     """ Used for all outgoing serialization """
@@ -305,10 +304,10 @@ class PopulatedFilmSerializer(FilmSerializer):
     creator = NestedUserSerializer()
 ```
 
-I then created a view in  the app's views.py to replacing the standard Django imports with the Django REST framework version, and hooked up the urls(routes) the same as a vanilla Django app, by adding in url patterns.
+I then created a view in  the app's views.py to replace the standard Django imports with the Django REST framework version, and hooked up the urls(routes) the same as I would for a vanilla Django app, by adding within the url patterns.
 
 #### Many to Many
-For a many to many relationship, I established the foreign key relationship on one of the two models (the example is using the film model):
+For a Many to Many relationship, I established the foreign key relationship on one of the two models (the example is using the film model):
 ```
     # Many to Many Relationships:
     genre = models.ManyToManyField('genres.Genre', related_name='films')
@@ -327,7 +326,7 @@ class PopulatedGenreSerializer(GenreSerializer):
 
     films = FilmSerializer(many=True)
 ```
-And then added the populated serializer in the view.py (this exaple is from the genre views.py) so that when we request to see all the genres, the films will also be passed with the request:
+And then added the populated serializer in the view.py (this example is from the genre views.py) so that when we request to see all the genres, the films will also be passed with the request:
 ```
 class GenreListView(APIView):
     """ View for get request to /genres """
@@ -339,10 +338,11 @@ class GenreListView(APIView):
 ```
 
 ### Seeding
-I did the majority of seeding in the evenings, after wrapping with that day's work. I followed the same process for all my models and uploaded all the information via the localhost admin site, and then once I was happy that I had enough data I would have Django create a seeds file automatically from the data that already existed in the table: <code>python manage.py dumpdata app-name --output app-name/seeds.json --indent=2</code>
-I then flushed the database and loaded the data from the seeds file back in.
+I did the majority of seeding in the evenings, after wrapping with that day's work. I followed the same process for all my models and uploaded all the information via the localhost admin site. Once I had enough data, I would have Django create a seeds file automatically from the data that already existed in the table: <code>python manage.py dumpdata app-name --output app-name/seeds.json --indent=2</code>
+and then flushed the database and loaded the data from the seeds file back in.
+Below is an example opf seeding data from TablePlus:
 
-![Insomnia Seed for films or slots](#link)
+![Table Plus](#link)
 
 ### Front End
 As per the project requirements, I used React for the front end. Mounting the front end was straight forward, and having already done this previously for [Project 3 (DEVERR)](https://github.com/HotSauceNinja/SEI-Project-3-DEVERR) definitely helped get through it faster. 
@@ -373,7 +373,7 @@ As an example of how I structured the components, the film folder was composed o
 
 Here is a photo with my folder structure, I followed the same process described above for the Cinemas and Slots. 
 
-![Folder Structure](#link)
+![Folder Structure](https://github.com/HotSauceNinja/SEI-Project-4-FASTival/blob/main/README%20images/folder_structure.png?raw=true)
 
 ### Registering a User
 Following similar steps for Registration until the point where I submitted the new user form, I then took a different path for Login.
@@ -627,7 +627,7 @@ As I had a few hours left until the project deadline, I decided to restructure m
 
 I refactored my code to allow all cinemas to be displayed on the cinema page, and then enabled showing a detailed version of each when the user selected one:
 
-![Cinemas page](#link)
+![Cinemas page](#link-to-cinema-page)
 
 I then imported my map into the ShowCinema component:
 ```
@@ -675,7 +675,7 @@ Further implementations could include:
 * Adding types of users with different levels of permission
 ---
 ## Contributing to this project
-If you have suggestions for improving this project, please [open an issue on GitHub] (https://github.com/HotSauceNinja/SEI-Project-4)
+If you have suggestions for improving this project, please [open an issue on GitHub](https://github.com/HotSauceNinja/SEI-Project-4)
 ## License & copyright
 This project was build for educational purposes. All the information on the website is fictitional (including names, contact details and film information). No copyright infringement is intended and all content is used under educational license. 
 
