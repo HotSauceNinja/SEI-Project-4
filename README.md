@@ -24,6 +24,10 @@ by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/) - [HotSauceNinja
     - [Restructuring](#restructuring)
     - [Mapbox API](#mapbox-api)
   - [Final Thoughts & Project Wrap](#final-thoughts-and-project-wrap)
+    - [Wins](#wins)
+    - [Challenges / Bugs](#challenges-/-bugs)
+    - [Key Learnings](#key-learnings)
+    - [Possible Future Features](#possible-future-features)
   - [License](#license)
 ## Short Description
 Platform aiming to optimise film festival scheduling
