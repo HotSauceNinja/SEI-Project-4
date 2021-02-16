@@ -30,7 +30,7 @@ by [Sandra Spighel](https://www.linkedin.com/in/sandraspighel/) - [HotSauceNinja
     - [Possible Future Features](#possible-future-features)
   - [License](#license)
 ## Short Description
-Platform aiming to optimise film festival scheduling
+Platform aiming to optimise film festival scheduling by making it fully digital (and much friendlier to the environment).
 
 ## Background
 In Film Festivals, scheduling is a lengthy process where huge wooden boards and hundreds of paper cards are used to plan screenings across the multiple contracted cinema screens. 
